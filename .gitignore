@@ -1,0 +1,4 @@
+*.root
+*.hipo
+analysis_out*/
+data/outH2R/
