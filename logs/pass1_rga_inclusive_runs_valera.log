@@ -1,0 +1,2737 @@
+   ------------------------------------------------------------------
+  | Welcome to ROOT 6.36.04                        https://root.cern |
+  | (c) 1995-2025, The ROOT Team; conception: R. Brun, F. Rademakers |
+  | Built for linuxx8664gcc on Oct 03 2025, 21:21:39                 |
+  | From tags/6-36-04@6-36-04                                        |
+  | With c++ (GCC) 11.5.0 20240719 (Red Hat 11.5.0-5)                |
+  | Try '.help'/'.?', '.demo', '.license', '.credits', '.quit'/'.q'  |
+   ------------------------------------------------------------------
+
+
+Processing ana12GeVShortFCQA.C...
+isHipo: 1
+Started 1
+HipoChain::FirstFile() -1 out of 172
+Warning , hipo::schema getEntryOrder(const char *name) item :px not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :py not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :pz not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :edge not found, for bank REC::Traj data for this item is not valid 
+clas12databases::initQA pass = pass1 run =5032
+Started 2
+Started 3
+HipoChain::NextFile() 0 out of 172
+HipoChain::FirstFile() 0 out of 172
+Warning , hipo::schema getEntryOrder(const char *name) item :px not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :py not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :pz not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :edge not found, for bank REC::Traj data for this item is not valid 
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005032.hipo
+	 read 786137 events from which 784675 passed filtering conditions.
+	 accumulated charge past QA: 34245.6 nC
+HipoChain::NextFile() 1 out of 172
+HipoChain::FirstFile() 1 out of 172
+Warning , hipo::schema getEntryOrder(const char *name) item :px not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :py not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :pz not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :edge not found, for bank REC::Traj data for this item is not valid 
+clas12databases::initQA pass = pass1 run =5036
+processed 1M events
+processed 2M events
+processed 3M events
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005036.hipo
+	 read 3938352 events from which 2678470 passed filtering conditions.
+	 accumulated charge past QA: 114022 nC
+HipoChain::NextFile() 2 out of 172
+HipoChain::FirstFile() 2 out of 172
+Warning , hipo::schema getEntryOrder(const char *name) item :px not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :py not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :pz not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :edge not found, for bank REC::Traj data for this item is not valid 
+clas12databases::initQA pass = pass1 run =5038
+processed 4M events
+processed 5M events
+processed 6M events
+processed 7M events
+processed 8M events
+processed 9M events
+processed 10M events
+processed 11M events
+processed 12M events
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005038.hipo
+	 read 8934140 events from which 8899251 passed filtering conditions.
+	 accumulated charge past QA: 378709 nC
+HipoChain::NextFile() 3 out of 172
+HipoChain::FirstFile() 3 out of 172
+Warning , hipo::schema getEntryOrder(const char *name) item :px not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :py not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :pz not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :edge not found, for bank REC::Traj data for this item is not valid 
+clas12databases::initQA pass = pass1 run =5039
+processed 13M events
+processed 14M events
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005039.hipo
+	 read 2308850 events from which 2274479 passed filtering conditions.
+	 accumulated charge past QA: 96850.5 nC
+HipoChain::NextFile() 4 out of 172
+HipoChain::FirstFile() 4 out of 172
+Warning , hipo::schema getEntryOrder(const char *name) item :px not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :py not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :pz not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :edge not found, for bank REC::Traj data for this item is not valid 
+clas12databases::initQA pass = pass1 run =5040
+processed 15M events
+processed 16M events
+processed 17M events
+processed 18M events
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005040.hipo
+	 read 3436423 events from which 3436423 passed filtering conditions.
+	 accumulated charge past QA: 147343 nC
+HipoChain::NextFile() 5 out of 172
+HipoChain::FirstFile() 5 out of 172
+Warning , hipo::schema getEntryOrder(const char *name) item :px not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :py not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :pz not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :edge not found, for bank REC::Traj data for this item is not valid 
+clas12databases::initQA pass = pass1 run =5041
+processed 19M events
+processed 20M events
+processed 21M events
+processed 22M events
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005041.hipo
+	 read 4242483 events from which 4114014 passed filtering conditions.
+	 accumulated charge past QA: 175940 nC
+HipoChain::NextFile() 6 out of 172
+HipoChain::FirstFile() 6 out of 172
+Warning , hipo::schema getEntryOrder(const char *name) item :px not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :py not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :pz not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :edge not found, for bank REC::Traj data for this item is not valid 
+clas12databases::initQA pass = pass1 run =5043
+processed 23M events
+processed 24M events
+processed 25M events
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005043.hipo
+	 read 3296174 events from which 3296174 passed filtering conditions.
+	 accumulated charge past QA: 140423 nC
+HipoChain::NextFile() 7 out of 172
+HipoChain::FirstFile() 7 out of 172
+Warning , hipo::schema getEntryOrder(const char *name) item :px not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :py not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :pz not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :edge not found, for bank REC::Traj data for this item is not valid 
+clas12databases::initQA pass = pass1 run =5045
+processed 26M events
+processed 27M events
+processed 28M events
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005045.hipo
+	 read 3316185 events from which 3245077 passed filtering conditions.
+	 accumulated charge past QA: 137370 nC
+HipoChain::NextFile() 8 out of 172
+HipoChain::FirstFile() 8 out of 172
+Warning , hipo::schema getEntryOrder(const char *name) item :px not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :py not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :pz not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :edge not found, for bank REC::Traj data for this item is not valid 
+clas12databases::initQA pass = pass1 run =5046
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005046.hipo
+	 read 9046182 events from which 0 passed filtering conditions.
+	 accumulated charge past QA: 0 nC
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005046.hipo
+	 read 9046182 events from which 0 passed filtering conditions.
+	 accumulated charge past QA: 0 nC
+HipoChain::NextFile() 9 out of 172
+HipoChain::FirstFile() 9 out of 172
+Warning , hipo::schema getEntryOrder(const char *name) item :px not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :py not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :pz not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :edge not found, for bank REC::Traj data for this item is not valid 
+clas12databases::initQA pass = pass1 run =5047
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005047.hipo
+	 read 375436 events from which 0 passed filtering conditions.
+	 accumulated charge past QA: 0 nC
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005047.hipo
+	 read 375436 events from which 0 passed filtering conditions.
+	 accumulated charge past QA: 0 nC
+HipoChain::NextFile() 10 out of 172
+HipoChain::FirstFile() 10 out of 172
+Warning , hipo::schema getEntryOrder(const char *name) item :px not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :py not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :pz not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :edge not found, for bank REC::Traj data for this item is not valid 
+clas12databases::initQA pass = pass1 run =5051
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005051.hipo
+	 read 6701996 events from which 0 passed filtering conditions.
+	 accumulated charge past QA: 0 nC
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005051.hipo
+	 read 6701996 events from which 0 passed filtering conditions.
+	 accumulated charge past QA: 0 nC
+HipoChain::NextFile() 11 out of 172
+HipoChain::FirstFile() 11 out of 172
+Warning , hipo::schema getEntryOrder(const char *name) item :px not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :py not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :pz not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :edge not found, for bank REC::Traj data for this item is not valid 
+clas12databases::initQA pass = pass1 run =5052
+processed 29M events
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005052.hipo
+	 read 900228 events from which 789576 passed filtering conditions.
+	 accumulated charge past QA: 34382.7 nC
+HipoChain::NextFile() 12 out of 172
+HipoChain::FirstFile() 12 out of 172
+Warning , hipo::schema getEntryOrder(const char *name) item :px not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :py not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :pz not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :edge not found, for bank REC::Traj data for this item is not valid 
+clas12databases::initQA pass = pass1 run =5053
+processed 30M events
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005053.hipo
+	 read 1197953 events from which 1197953 passed filtering conditions.
+	 accumulated charge past QA: 52192.9 nC
+HipoChain::NextFile() 13 out of 172
+HipoChain::FirstFile() 13 out of 172
+Warning , hipo::schema getEntryOrder(const char *name) item :px not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :py not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :pz not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :edge not found, for bank REC::Traj data for this item is not valid 
+clas12databases::initQA pass = pass1 run =5116
+processed 31M events
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005116.hipo
+	 read 874841 events from which 874841 passed filtering conditions.
+	 accumulated charge past QA: 38416.6 nC
+HipoChain::NextFile() 14 out of 172
+HipoChain::FirstFile() 14 out of 172
+Warning , hipo::schema getEntryOrder(const char *name) item :px not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :py not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :pz not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :edge not found, for bank REC::Traj data for this item is not valid 
+clas12databases::initQA pass = pass1 run =5117
+processed 32M events
+processed 33M events
+processed 34M events
+processed 35M events
+processed 36M events
+processed 37M events
+processed 38M events
+processed 39M events
+processed 40M events
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005117.hipo
+	 read 9046161 events from which 9010034 passed filtering conditions.
+	 accumulated charge past QA: 393660 nC
+HipoChain::NextFile() 15 out of 172
+HipoChain::FirstFile() 15 out of 172
+Warning , hipo::schema getEntryOrder(const char *name) item :px not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :py not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :pz not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :edge not found, for bank REC::Traj data for this item is not valid 
+clas12databases::initQA pass = pass1 run =5119
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005119.hipo
+	 read 294566 events from which 294566 passed filtering conditions.
+	 accumulated charge past QA: 12884.6 nC
+HipoChain::NextFile() 16 out of 172
+HipoChain::FirstFile() 16 out of 172
+Warning , hipo::schema getEntryOrder(const char *name) item :px not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :py not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :pz not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :edge not found, for bank REC::Traj data for this item is not valid 
+clas12databases::initQA pass = pass1 run =5120
+processed 41M events
+processed 42M events
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005120.hipo
+	 read 1913988 events from which 1913988 passed filtering conditions.
+	 accumulated charge past QA: 78582.2 nC
+HipoChain::NextFile() 17 out of 172
+HipoChain::FirstFile() 17 out of 172
+Warning , hipo::schema getEntryOrder(const char *name) item :px not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :py not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :pz not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :edge not found, for bank REC::Traj data for this item is not valid 
+clas12databases::initQA pass = pass1 run =5124
+processed 43M events
+processed 44M events
+processed 45M events
+processed 46M events
+processed 47M events
+processed 48M events
+processed 49M events
+processed 50M events
+processed 51M events
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005124.hipo
+	 read 9022143 events from which 8985106 passed filtering conditions.
+	 accumulated charge past QA: 395035 nC
+HipoChain::NextFile() 18 out of 172
+HipoChain::FirstFile() 18 out of 172
+Warning , hipo::schema getEntryOrder(const char *name) item :px not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :py not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :pz not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :edge not found, for bank REC::Traj data for this item is not valid 
+clas12databases::initQA pass = pass1 run =5125
+processed 52M events
+processed 53M events
+processed 54M events
+processed 55M events
+processed 56M events
+processed 57M events
+processed 58M events
+processed 59M events
+processed 60M events
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005125.hipo
+	 read 9082346 events from which 9082346 passed filtering conditions.
+	 accumulated charge past QA: 397571 nC
+HipoChain::NextFile() 19 out of 172
+HipoChain::FirstFile() 19 out of 172
+Warning , hipo::schema getEntryOrder(const char *name) item :px not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :py not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :pz not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :edge not found, for bank REC::Traj data for this item is not valid 
+clas12databases::initQA pass = pass1 run =5126
+processed 61M events
+processed 62M events
+processed 63M events
+processed 64M events
+processed 65M events
+processed 66M events
+processed 67M events
+processed 68M events
+processed 69M events
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005126.hipo
+	 read 9075838 events from which 9075838 passed filtering conditions.
+	 accumulated charge past QA: 397503 nC
+HipoChain::NextFile() 20 out of 172
+HipoChain::FirstFile() 20 out of 172
+Warning , hipo::schema getEntryOrder(const char *name) item :px not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :py not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :pz not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :edge not found, for bank REC::Traj data for this item is not valid 
+clas12databases::initQA pass = pass1 run =5127
+processed 70M events
+processed 71M events
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005127.hipo
+	 read 1613904 events from which 1328063 passed filtering conditions.
+	 accumulated charge past QA: 57527.1 nC
+HipoChain::NextFile() 21 out of 172
+HipoChain::FirstFile() 21 out of 172
+Warning , hipo::schema getEntryOrder(const char *name) item :px not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :py not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :pz not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :edge not found, for bank REC::Traj data for this item is not valid 
+clas12databases::initQA pass = pass1 run =5128
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005128.hipo
+	 read 9170334 events from which 0 passed filtering conditions.
+	 accumulated charge past QA: 0 nC
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005128.hipo
+	 read 9170334 events from which 0 passed filtering conditions.
+	 accumulated charge past QA: 0 nC
+HipoChain::NextFile() 22 out of 172
+HipoChain::FirstFile() 22 out of 172
+Warning , hipo::schema getEntryOrder(const char *name) item :px not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :py not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :pz not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :edge not found, for bank REC::Traj data for this item is not valid 
+clas12databases::initQA pass = pass1 run =5129
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005129.hipo
+	 read 3922406 events from which 0 passed filtering conditions.
+	 accumulated charge past QA: 0 nC
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005129.hipo
+	 read 3922406 events from which 0 passed filtering conditions.
+	 accumulated charge past QA: 0 nC
+HipoChain::NextFile() 23 out of 172
+HipoChain::FirstFile() 23 out of 172
+Warning , hipo::schema getEntryOrder(const char *name) item :px not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :py not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :pz not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :edge not found, for bank REC::Traj data for this item is not valid 
+clas12databases::initQA pass = pass1 run =5130
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005130.hipo
+	 read 9235131 events from which 0 passed filtering conditions.
+	 accumulated charge past QA: 0 nC
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005130.hipo
+	 read 9235131 events from which 0 passed filtering conditions.
+	 accumulated charge past QA: 0 nC
+HipoChain::NextFile() 24 out of 172
+HipoChain::FirstFile() 24 out of 172
+Warning , hipo::schema getEntryOrder(const char *name) item :px not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :py not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :pz not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :edge not found, for bank REC::Traj data for this item is not valid 
+clas12databases::initQA pass = pass1 run =5137
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005137.hipo
+	 read 209553 events from which 0 passed filtering conditions.
+	 accumulated charge past QA: 0 nC
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005137.hipo
+	 read 209553 events from which 0 passed filtering conditions.
+	 accumulated charge past QA: 0 nC
+HipoChain::NextFile() 25 out of 172
+HipoChain::FirstFile() 25 out of 172
+Warning , hipo::schema getEntryOrder(const char *name) item :px not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :py not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :pz not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :edge not found, for bank REC::Traj data for this item is not valid 
+clas12databases::initQA pass = pass1 run =5138
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005138.hipo
+	 read 784880 events from which 0 passed filtering conditions.
+	 accumulated charge past QA: 0 nC
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005138.hipo
+	 read 784880 events from which 0 passed filtering conditions.
+	 accumulated charge past QA: 0 nC
+HipoChain::NextFile() 26 out of 172
+HipoChain::FirstFile() 26 out of 172
+Warning , hipo::schema getEntryOrder(const char *name) item :px not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :py not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :pz not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :edge not found, for bank REC::Traj data for this item is not valid 
+clas12databases::initQA pass = pass1 run =5139
+processed 72M events
+processed 73M events
+processed 74M events
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005139.hipo
+	 read 3224054 events from which 3193895 passed filtering conditions.
+	 accumulated charge past QA: 139615 nC
+HipoChain::NextFile() 27 out of 172
+HipoChain::FirstFile() 27 out of 172
+Warning , hipo::schema getEntryOrder(const char *name) item :px not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :py not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :pz not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :edge not found, for bank REC::Traj data for this item is not valid 
+clas12databases::initQA pass = pass1 run =5153
+processed 75M events
+processed 76M events
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005153.hipo
+	 read 1564368 events from which 1564368 passed filtering conditions.
+	 accumulated charge past QA: 69038.4 nC
+HipoChain::NextFile() 28 out of 172
+HipoChain::FirstFile() 28 out of 172
+Warning , hipo::schema getEntryOrder(const char *name) item :px not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :py not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :pz not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :edge not found, for bank REC::Traj data for this item is not valid 
+clas12databases::initQA pass = pass1 run =5158
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005158.hipo
+	 read 1210361 events from which 361214 passed filtering conditions.
+	 accumulated charge past QA: 12711.2 nC
+HipoChain::NextFile() 29 out of 172
+HipoChain::FirstFile() 29 out of 172
+Warning , hipo::schema getEntryOrder(const char *name) item :px not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :py not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :pz not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :edge not found, for bank REC::Traj data for this item is not valid 
+clas12databases::initQA pass = pass1 run =5159
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005159.hipo
+	 read 5719353 events from which 0 passed filtering conditions.
+	 accumulated charge past QA: 0 nC
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005159.hipo
+	 read 5719353 events from which 0 passed filtering conditions.
+	 accumulated charge past QA: 0 nC
+HipoChain::NextFile() 30 out of 172
+HipoChain::FirstFile() 30 out of 172
+Warning , hipo::schema getEntryOrder(const char *name) item :px not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :py not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :pz not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :edge not found, for bank REC::Traj data for this item is not valid 
+clas12databases::initQA pass = pass1 run =5160
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005160.hipo
+	 read 6810706 events from which 0 passed filtering conditions.
+	 accumulated charge past QA: 0 nC
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005160.hipo
+	 read 6810706 events from which 0 passed filtering conditions.
+	 accumulated charge past QA: 0 nC
+HipoChain::NextFile() 31 out of 172
+HipoChain::FirstFile() 31 out of 172
+Warning , hipo::schema getEntryOrder(const char *name) item :px not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :py not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :pz not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :edge not found, for bank REC::Traj data for this item is not valid 
+clas12databases::initQA pass = pass1 run =5162
+processed 77M events
+processed 78M events
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005162.hipo
+	 read 1858749 events from which 1841668 passed filtering conditions.
+	 accumulated charge past QA: 80069.8 nC
+HipoChain::NextFile() 32 out of 172
+HipoChain::FirstFile() 32 out of 172
+Warning , hipo::schema getEntryOrder(const char *name) item :px not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :py not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :pz not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :edge not found, for bank REC::Traj data for this item is not valid 
+clas12databases::initQA pass = pass1 run =5163
+processed 79M events
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005163.hipo
+	 read 9192027 events from which 914679 passed filtering conditions.
+	 accumulated charge past QA: 38739.3 nC
+HipoChain::NextFile() 33 out of 172
+HipoChain::FirstFile() 33 out of 172
+Warning , hipo::schema getEntryOrder(const char *name) item :px not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :py not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :pz not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :edge not found, for bank REC::Traj data for this item is not valid 
+clas12databases::initQA pass = pass1 run =5164
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005164.hipo
+	 read 148116 events from which 113305 passed filtering conditions.
+	 accumulated charge past QA: 5041.72 nC
+HipoChain::NextFile() 34 out of 172
+HipoChain::FirstFile() 34 out of 172
+Warning , hipo::schema getEntryOrder(const char *name) item :px not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :py not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :pz not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :edge not found, for bank REC::Traj data for this item is not valid 
+clas12databases::initQA pass = pass1 run =5165
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005165.hipo
+	 read 8860293 events from which 0 passed filtering conditions.
+	 accumulated charge past QA: 0 nC
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005165.hipo
+	 read 8860293 events from which 0 passed filtering conditions.
+	 accumulated charge past QA: 0 nC
+HipoChain::NextFile() 35 out of 172
+HipoChain::FirstFile() 35 out of 172
+Warning , hipo::schema getEntryOrder(const char *name) item :px not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :py not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :pz not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :edge not found, for bank REC::Traj data for this item is not valid 
+clas12databases::initQA pass = pass1 run =5166
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005166.hipo
+	 read 9216812 events from which 0 passed filtering conditions.
+	 accumulated charge past QA: 0 nC
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005166.hipo
+	 read 9216812 events from which 0 passed filtering conditions.
+	 accumulated charge past QA: 0 nC
+HipoChain::NextFile() 36 out of 172
+HipoChain::FirstFile() 36 out of 172
+Warning , hipo::schema getEntryOrder(const char *name) item :px not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :py not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :pz not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :edge not found, for bank REC::Traj data for this item is not valid 
+clas12databases::initQA pass = pass1 run =5167
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005167.hipo
+	 read 9135120 events from which 0 passed filtering conditions.
+	 accumulated charge past QA: 0 nC
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005167.hipo
+	 read 9135120 events from which 0 passed filtering conditions.
+	 accumulated charge past QA: 0 nC
+HipoChain::NextFile() 37 out of 172
+HipoChain::FirstFile() 37 out of 172
+Warning , hipo::schema getEntryOrder(const char *name) item :px not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :py not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :pz not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :edge not found, for bank REC::Traj data for this item is not valid 
+clas12databases::initQA pass = pass1 run =5168
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005168.hipo
+	 read 4602465 events from which 0 passed filtering conditions.
+	 accumulated charge past QA: 0 nC
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005168.hipo
+	 read 4602465 events from which 0 passed filtering conditions.
+	 accumulated charge past QA: 0 nC
+HipoChain::NextFile() 38 out of 172
+HipoChain::FirstFile() 38 out of 172
+Warning , hipo::schema getEntryOrder(const char *name) item :px not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :py not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :pz not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :edge not found, for bank REC::Traj data for this item is not valid 
+clas12databases::initQA pass = pass1 run =5169
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005169.hipo
+	 read 9279117 events from which 0 passed filtering conditions.
+	 accumulated charge past QA: 0 nC
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005169.hipo
+	 read 9279117 events from which 0 passed filtering conditions.
+	 accumulated charge past QA: 0 nC
+HipoChain::NextFile() 39 out of 172
+HipoChain::FirstFile() 39 out of 172
+Warning , hipo::schema getEntryOrder(const char *name) item :px not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :py not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :pz not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :edge not found, for bank REC::Traj data for this item is not valid 
+clas12databases::initQA pass = pass1 run =5180
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005180.hipo
+	 read 5175828 events from which 0 passed filtering conditions.
+	 accumulated charge past QA: 0 nC
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005180.hipo
+	 read 5175828 events from which 0 passed filtering conditions.
+	 accumulated charge past QA: 0 nC
+HipoChain::NextFile() 40 out of 172
+HipoChain::FirstFile() 40 out of 172
+Warning , hipo::schema getEntryOrder(const char *name) item :px not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :py not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :pz not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :edge not found, for bank REC::Traj data for this item is not valid 
+clas12databases::initQA pass = pass1 run =5181
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005181.hipo
+	 read 9107204 events from which 484021 passed filtering conditions.
+	 accumulated charge past QA: 21149 nC
+HipoChain::NextFile() 41 out of 172
+HipoChain::FirstFile() 41 out of 172
+Warning , hipo::schema getEntryOrder(const char *name) item :px not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :py not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :pz not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :edge not found, for bank REC::Traj data for this item is not valid 
+clas12databases::initQA pass = pass1 run =5182
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005182.hipo
+	 read 1803146 events from which 0 passed filtering conditions.
+	 accumulated charge past QA: 0 nC
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005182.hipo
+	 read 1803146 events from which 0 passed filtering conditions.
+	 accumulated charge past QA: 0 nC
+HipoChain::NextFile() 42 out of 172
+HipoChain::FirstFile() 42 out of 172
+Warning , hipo::schema getEntryOrder(const char *name) item :px not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :py not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :pz not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :edge not found, for bank REC::Traj data for this item is not valid 
+clas12databases::initQA pass = pass1 run =5183
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005183.hipo
+	 read 7565909 events from which 0 passed filtering conditions.
+	 accumulated charge past QA: 0 nC
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005183.hipo
+	 read 7565909 events from which 0 passed filtering conditions.
+	 accumulated charge past QA: 0 nC
+HipoChain::NextFile() 43 out of 172
+HipoChain::FirstFile() 43 out of 172
+Warning , hipo::schema getEntryOrder(const char *name) item :px not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :py not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :pz not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :edge not found, for bank REC::Traj data for this item is not valid 
+clas12databases::initQA pass = pass1 run =5189
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005189.hipo
+	 read 420495 events from which 0 passed filtering conditions.
+	 accumulated charge past QA: 0 nC
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005189.hipo
+	 read 420495 events from which 0 passed filtering conditions.
+	 accumulated charge past QA: 0 nC
+HipoChain::NextFile() 44 out of 172
+HipoChain::FirstFile() 44 out of 172
+Warning , hipo::schema getEntryOrder(const char *name) item :px not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :py not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :pz not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :edge not found, for bank REC::Traj data for this item is not valid 
+clas12databases::initQA pass = pass1 run =5190
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005190.hipo
+	 read 4353324 events from which 0 passed filtering conditions.
+	 accumulated charge past QA: 0 nC
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005190.hipo
+	 read 4353324 events from which 0 passed filtering conditions.
+	 accumulated charge past QA: 0 nC
+HipoChain::NextFile() 45 out of 172
+HipoChain::FirstFile() 45 out of 172
+Warning , hipo::schema getEntryOrder(const char *name) item :px not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :py not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :pz not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :edge not found, for bank REC::Traj data for this item is not valid 
+clas12databases::initQA pass = pass1 run =5191
+processed 80M events
+processed 81M events
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005191.hipo
+	 read 10059433 events from which 2049285 passed filtering conditions.
+	 accumulated charge past QA: 86529.9 nC
+HipoChain::NextFile() 46 out of 172
+HipoChain::FirstFile() 46 out of 172
+Warning , hipo::schema getEntryOrder(const char *name) item :px not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :py not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :pz not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :edge not found, for bank REC::Traj data for this item is not valid 
+clas12databases::initQA pass = pass1 run =5193
+processed 82M events
+processed 83M events
+processed 84M events
+processed 85M events
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005193.hipo
+	 read 3673486 events from which 3672309 passed filtering conditions.
+	 accumulated charge past QA: 154744 nC
+HipoChain::NextFile() 47 out of 172
+HipoChain::FirstFile() 47 out of 172
+Warning , hipo::schema getEntryOrder(const char *name) item :px not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :py not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :pz not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :edge not found, for bank REC::Traj data for this item is not valid 
+clas12databases::initQA pass = pass1 run =5194
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005194.hipo
+	 read 442310 events from which 0 passed filtering conditions.
+	 accumulated charge past QA: 0 nC
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005194.hipo
+	 read 442310 events from which 0 passed filtering conditions.
+	 accumulated charge past QA: 0 nC
+HipoChain::NextFile() 48 out of 172
+HipoChain::FirstFile() 48 out of 172
+Warning , hipo::schema getEntryOrder(const char *name) item :px not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :py not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :pz not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :edge not found, for bank REC::Traj data for this item is not valid 
+clas12databases::initQA pass = pass1 run =5195
+processed 86M events
+processed 87M events
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005195.hipo
+	 read 1891903 events from which 1760119 passed filtering conditions.
+	 accumulated charge past QA: 75158.6 nC
+HipoChain::NextFile() 49 out of 172
+HipoChain::FirstFile() 49 out of 172
+Warning , hipo::schema getEntryOrder(const char *name) item :px not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :py not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :pz not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :edge not found, for bank REC::Traj data for this item is not valid 
+clas12databases::initQA pass = pass1 run =5196
+processed 88M events
+processed 89M events
+processed 90M events
+processed 91M events
+processed 92M events
+processed 93M events
+processed 94M events
+processed 95M events
+processed 96M events
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005196.hipo
+	 read 9743510 events from which 9695674 passed filtering conditions.
+	 accumulated charge past QA: 411810 nC
+HipoChain::NextFile() 50 out of 172
+HipoChain::FirstFile() 50 out of 172
+Warning , hipo::schema getEntryOrder(const char *name) item :px not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :py not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :pz not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :edge not found, for bank REC::Traj data for this item is not valid 
+clas12databases::initQA pass = pass1 run =5197
+processed 97M events
+processed 98M events
+processed 99M events
+processed 100M events
+processed 101M events
+processed 102M events
+processed 103M events
+processed 104M events
+processed 105M events
+processed 106M events
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005197.hipo
+	 read 9756017 events from which 9756017 passed filtering conditions.
+	 accumulated charge past QA: 414557 nC
+HipoChain::NextFile() 51 out of 172
+HipoChain::FirstFile() 51 out of 172
+Warning , hipo::schema getEntryOrder(const char *name) item :px not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :py not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :pz not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :edge not found, for bank REC::Traj data for this item is not valid 
+clas12databases::initQA pass = pass1 run =5198
+processed 107M events
+processed 108M events
+processed 109M events
+processed 110M events
+processed 111M events
+processed 112M events
+processed 113M events
+processed 114M events
+processed 115M events
+processed 116M events
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005198.hipo
+	 read 9528537 events from which 9528537 passed filtering conditions.
+	 accumulated charge past QA: 411532 nC
+HipoChain::NextFile() 52 out of 172
+HipoChain::FirstFile() 52 out of 172
+Warning , hipo::schema getEntryOrder(const char *name) item :px not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :py not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :pz not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :edge not found, for bank REC::Traj data for this item is not valid 
+clas12databases::initQA pass = pass1 run =5199
+processed 117M events
+processed 118M events
+processed 119M events
+processed 120M events
+processed 121M events
+processed 122M events
+processed 123M events
+processed 124M events
+processed 125M events
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005199.hipo
+	 read 9619763 events from which 9619763 passed filtering conditions.
+	 accumulated charge past QA: 412208 nC
+HipoChain::NextFile() 53 out of 172
+HipoChain::FirstFile() 53 out of 172
+Warning , hipo::schema getEntryOrder(const char *name) item :px not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :py not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :pz not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :edge not found, for bank REC::Traj data for this item is not valid 
+clas12databases::initQA pass = pass1 run =5200
+processed 126M events
+processed 127M events
+processed 128M events
+processed 129M events
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005200.hipo
+	 read 3549388 events from which 3549388 passed filtering conditions.
+	 accumulated charge past QA: 154042 nC
+HipoChain::NextFile() 54 out of 172
+HipoChain::FirstFile() 54 out of 172
+Warning , hipo::schema getEntryOrder(const char *name) item :px not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :py not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :pz not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :edge not found, for bank REC::Traj data for this item is not valid 
+clas12databases::initQA pass = pass1 run =5201
+processed 130M events
+processed 131M events
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005201.hipo
+	 read 1865472 events from which 1865472 passed filtering conditions.
+	 accumulated charge past QA: 80925.5 nC
+HipoChain::NextFile() 55 out of 172
+HipoChain::FirstFile() 55 out of 172
+Warning , hipo::schema getEntryOrder(const char *name) item :px not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :py not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :pz not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :edge not found, for bank REC::Traj data for this item is not valid 
+clas12databases::initQA pass = pass1 run =5202
+processed 132M events
+processed 133M events
+processed 134M events
+processed 135M events
+processed 136M events
+processed 137M events
+processed 138M events
+processed 139M events
+processed 140M events
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005202.hipo
+	 read 9508331 events from which 9467578 passed filtering conditions.
+	 accumulated charge past QA: 410589 nC
+HipoChain::NextFile() 56 out of 172
+HipoChain::FirstFile() 56 out of 172
+Warning , hipo::schema getEntryOrder(const char *name) item :px not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :py not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :pz not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :edge not found, for bank REC::Traj data for this item is not valid 
+clas12databases::initQA pass = pass1 run =5203
+processed 141M events
+processed 142M events
+processed 143M events
+processed 144M events
+processed 145M events
+processed 146M events
+processed 147M events
+processed 148M events
+processed 149M events
+processed 150M events
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005203.hipo
+	 read 9566680 events from which 9566680 passed filtering conditions.
+	 accumulated charge past QA: 414655 nC
+HipoChain::NextFile() 57 out of 172
+HipoChain::FirstFile() 57 out of 172
+Warning , hipo::schema getEntryOrder(const char *name) item :px not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :py not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :pz not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :edge not found, for bank REC::Traj data for this item is not valid 
+clas12databases::initQA pass = pass1 run =5204
+processed 151M events
+processed 152M events
+processed 153M events
+processed 154M events
+processed 155M events
+processed 156M events
+processed 157M events
+processed 158M events
+processed 159M events
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005204.hipo
+	 read 9326875 events from which 9284280 passed filtering conditions.
+	 accumulated charge past QA: 398399 nC
+HipoChain::NextFile() 58 out of 172
+HipoChain::FirstFile() 58 out of 172
+Warning , hipo::schema getEntryOrder(const char *name) item :px not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :py not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :pz not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :edge not found, for bank REC::Traj data for this item is not valid 
+clas12databases::initQA pass = pass1 run =5205
+processed 160M events
+processed 161M events
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005205.hipo
+	 read 2097245 events from which 2097245 passed filtering conditions.
+	 accumulated charge past QA: 90713.7 nC
+HipoChain::NextFile() 59 out of 172
+HipoChain::FirstFile() 59 out of 172
+Warning , hipo::schema getEntryOrder(const char *name) item :px not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :py not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :pz not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :edge not found, for bank REC::Traj data for this item is not valid 
+clas12databases::initQA pass = pass1 run =5206
+processed 162M events
+processed 163M events
+processed 164M events
+processed 165M events
+processed 166M events
+processed 167M events
+processed 168M events
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005206.hipo
+	 read 6778641 events from which 6748531 passed filtering conditions.
+	 accumulated charge past QA: 289584 nC
+HipoChain::NextFile() 60 out of 172
+HipoChain::FirstFile() 60 out of 172
+Warning , hipo::schema getEntryOrder(const char *name) item :px not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :py not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :pz not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :edge not found, for bank REC::Traj data for this item is not valid 
+clas12databases::initQA pass = pass1 run =5208
+processed 169M events
+processed 170M events
+processed 171M events
+processed 172M events
+processed 173M events
+processed 174M events
+processed 175M events
+processed 176M events
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005208.hipo
+	 read 7884725 events from which 7884725 passed filtering conditions.
+	 accumulated charge past QA: 333470 nC
+HipoChain::NextFile() 61 out of 172
+HipoChain::FirstFile() 61 out of 172
+Warning , hipo::schema getEntryOrder(const char *name) item :px not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :py not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :pz not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :edge not found, for bank REC::Traj data for this item is not valid 
+clas12databases::initQA pass = pass1 run =5211
+processed 177M events
+processed 178M events
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005211.hipo
+	 read 2156612 events from which 2116907 passed filtering conditions.
+	 accumulated charge past QA: 87206.4 nC
+HipoChain::NextFile() 62 out of 172
+HipoChain::FirstFile() 62 out of 172
+Warning , hipo::schema getEntryOrder(const char *name) item :px not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :py not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :pz not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :edge not found, for bank REC::Traj data for this item is not valid 
+clas12databases::initQA pass = pass1 run =5212
+processed 179M events
+processed 180M events
+processed 181M events
+processed 182M events
+processed 183M events
+processed 184M events
+processed 185M events
+processed 186M events
+processed 187M events
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005212.hipo
+	 read 9461161 events from which 9220340 passed filtering conditions.
+	 accumulated charge past QA: 391124 nC
+HipoChain::NextFile() 63 out of 172
+HipoChain::FirstFile() 63 out of 172
+Warning , hipo::schema getEntryOrder(const char *name) item :px not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :py not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :pz not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :edge not found, for bank REC::Traj data for this item is not valid 
+clas12databases::initQA pass = pass1 run =5215
+processed 188M events
+processed 189M events
+processed 190M events
+processed 191M events
+processed 192M events
+processed 193M events
+processed 194M events
+processed 195M events
+processed 196M events
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005215.hipo
+	 read 9151671 events from which 9086055 passed filtering conditions.
+	 accumulated charge past QA: 386497 nC
+HipoChain::NextFile() 64 out of 172
+HipoChain::FirstFile() 64 out of 172
+Warning , hipo::schema getEntryOrder(const char *name) item :px not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :py not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :pz not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :edge not found, for bank REC::Traj data for this item is not valid 
+clas12databases::initQA pass = pass1 run =5216
+processed 197M events
+processed 198M events
+processed 199M events
+processed 200M events
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005216.hipo
+	 read 3902870 events from which 3870612 passed filtering conditions.
+	 accumulated charge past QA: 165194 nC
+HipoChain::NextFile() 65 out of 172
+HipoChain::FirstFile() 65 out of 172
+Warning , hipo::schema getEntryOrder(const char *name) item :px not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :py not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :pz not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :edge not found, for bank REC::Traj data for this item is not valid 
+clas12databases::initQA pass = pass1 run =5219
+processed 201M events
+processed 202M events
+processed 203M events
+processed 204M events
+processed 205M events
+processed 206M events
+processed 207M events
+processed 208M events
+processed 209M events
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005219.hipo
+	 read 9037136 events from which 9037136 passed filtering conditions.
+	 accumulated charge past QA: 385594 nC
+HipoChain::NextFile() 66 out of 172
+HipoChain::FirstFile() 66 out of 172
+Warning , hipo::schema getEntryOrder(const char *name) item :px not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :py not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :pz not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :edge not found, for bank REC::Traj data for this item is not valid 
+clas12databases::initQA pass = pass1 run =5220
+processed 210M events
+processed 211M events
+processed 212M events
+processed 213M events
+processed 214M events
+processed 215M events
+processed 216M events
+processed 217M events
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005220.hipo
+	 read 8301424 events from which 8301424 passed filtering conditions.
+	 accumulated charge past QA: 350442 nC
+HipoChain::NextFile() 67 out of 172
+HipoChain::FirstFile() 67 out of 172
+Warning , hipo::schema getEntryOrder(const char *name) item :px not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :py not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :pz not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :edge not found, for bank REC::Traj data for this item is not valid 
+clas12databases::initQA pass = pass1 run =5221
+processed 218M events
+processed 219M events
+processed 220M events
+processed 221M events
+processed 222M events
+processed 223M events
+processed 224M events
+processed 225M events
+processed 226M events
+processed 227M events
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005221.hipo
+	 read 9181710 events from which 9181710 passed filtering conditions.
+	 accumulated charge past QA: 389766 nC
+HipoChain::NextFile() 68 out of 172
+HipoChain::FirstFile() 68 out of 172
+Warning , hipo::schema getEntryOrder(const char *name) item :px not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :py not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :pz not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :edge not found, for bank REC::Traj data for this item is not valid 
+clas12databases::initQA pass = pass1 run =5222
+processed 228M events
+processed 229M events
+processed 230M events
+processed 231M events
+processed 232M events
+processed 233M events
+processed 234M events
+processed 235M events
+processed 236M events
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005222.hipo
+	 read 9246149 events from which 9208525 passed filtering conditions.
+	 accumulated charge past QA: 388895 nC
+HipoChain::NextFile() 69 out of 172
+HipoChain::FirstFile() 69 out of 172
+Warning , hipo::schema getEntryOrder(const char *name) item :px not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :py not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :pz not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :edge not found, for bank REC::Traj data for this item is not valid 
+clas12databases::initQA pass = pass1 run =5223
+processed 237M events
+processed 238M events
+processed 239M events
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005223.hipo
+	 read 3309524 events from which 3270038 passed filtering conditions.
+	 accumulated charge past QA: 135114 nC
+HipoChain::NextFile() 70 out of 172
+HipoChain::FirstFile() 70 out of 172
+Warning , hipo::schema getEntryOrder(const char *name) item :px not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :py not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :pz not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :edge not found, for bank REC::Traj data for this item is not valid 
+clas12databases::initQA pass = pass1 run =5225
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005225.hipo
+	 read 3897736 events from which 0 passed filtering conditions.
+	 accumulated charge past QA: 0 nC
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005225.hipo
+	 read 3897736 events from which 0 passed filtering conditions.
+	 accumulated charge past QA: 0 nC
+HipoChain::NextFile() 71 out of 172
+HipoChain::FirstFile() 71 out of 172
+Warning , hipo::schema getEntryOrder(const char *name) item :px not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :py not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :pz not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :edge not found, for bank REC::Traj data for this item is not valid 
+clas12databases::initQA pass = pass1 run =5229
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005229.hipo
+	 read 2157760 events from which 0 passed filtering conditions.
+	 accumulated charge past QA: 0 nC
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005229.hipo
+	 read 2157760 events from which 0 passed filtering conditions.
+	 accumulated charge past QA: 0 nC
+HipoChain::NextFile() 72 out of 172
+HipoChain::FirstFile() 72 out of 172
+Warning , hipo::schema getEntryOrder(const char *name) item :px not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :py not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :pz not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :edge not found, for bank REC::Traj data for this item is not valid 
+clas12databases::initQA pass = pass1 run =5230
+processed 240M events
+processed 241M events
+processed 242M events
+processed 243M events
+processed 244M events
+processed 245M events
+processed 246M events
+processed 247M events
+processed 248M events
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005230.hipo
+	 read 9056208 events from which 8721482 passed filtering conditions.
+	 accumulated charge past QA: 371039 nC
+HipoChain::NextFile() 73 out of 172
+HipoChain::FirstFile() 73 out of 172
+Warning , hipo::schema getEntryOrder(const char *name) item :px not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :py not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :pz not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :edge not found, for bank REC::Traj data for this item is not valid 
+clas12databases::initQA pass = pass1 run =5231
+processed 249M events
+processed 250M events
+processed 251M events
+processed 252M events
+processed 253M events
+processed 254M events
+processed 255M events
+processed 256M events
+processed 257M events
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005231.hipo
+	 read 9221689 events from which 9183206 passed filtering conditions.
+	 accumulated charge past QA: 390388 nC
+HipoChain::NextFile() 74 out of 172
+HipoChain::FirstFile() 74 out of 172
+Warning , hipo::schema getEntryOrder(const char *name) item :px not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :py not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :pz not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :edge not found, for bank REC::Traj data for this item is not valid 
+clas12databases::initQA pass = pass1 run =5232
+processed 258M events
+processed 259M events
+processed 260M events
+processed 261M events
+processed 262M events
+processed 263M events
+processed 264M events
+processed 265M events
+processed 266M events
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005232.hipo
+	 read 9273384 events from which 9201310 passed filtering conditions.
+	 accumulated charge past QA: 391028 nC
+HipoChain::NextFile() 75 out of 172
+HipoChain::FirstFile() 75 out of 172
+Warning , hipo::schema getEntryOrder(const char *name) item :px not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :py not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :pz not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :edge not found, for bank REC::Traj data for this item is not valid 
+clas12databases::initQA pass = pass1 run =5233
+processed 267M events
+processed 268M events
+processed 269M events
+processed 270M events
+processed 271M events
+processed 272M events
+processed 273M events
+processed 274M events
+processed 275M events
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005233.hipo
+	 read 9140377 events from which 9140377 passed filtering conditions.
+	 accumulated charge past QA: 389224 nC
+HipoChain::NextFile() 76 out of 172
+HipoChain::FirstFile() 76 out of 172
+Warning , hipo::schema getEntryOrder(const char *name) item :px not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :py not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :pz not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :edge not found, for bank REC::Traj data for this item is not valid 
+clas12databases::initQA pass = pass1 run =5234
+processed 276M events
+processed 277M events
+processed 278M events
+processed 279M events
+processed 280M events
+processed 281M events
+processed 282M events
+processed 283M events
+processed 284M events
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005234.hipo
+	 read 9140038 events from which 9140038 passed filtering conditions.
+	 accumulated charge past QA: 391996 nC
+HipoChain::NextFile() 77 out of 172
+HipoChain::FirstFile() 77 out of 172
+Warning , hipo::schema getEntryOrder(const char *name) item :px not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :py not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :pz not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :edge not found, for bank REC::Traj data for this item is not valid 
+clas12databases::initQA pass = pass1 run =5235
+processed 285M events
+processed 286M events
+processed 287M events
+processed 288M events
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005235.hipo
+	 read 3411572 events from which 3364867 passed filtering conditions.
+	 accumulated charge past QA: 145449 nC
+HipoChain::NextFile() 78 out of 172
+HipoChain::FirstFile() 78 out of 172
+Warning , hipo::schema getEntryOrder(const char *name) item :px not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :py not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :pz not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :edge not found, for bank REC::Traj data for this item is not valid 
+clas12databases::initQA pass = pass1 run =5237
+processed 289M events
+processed 290M events
+processed 291M events
+processed 292M events
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005237.hipo
+	 read 3677304 events from which 3677304 passed filtering conditions.
+	 accumulated charge past QA: 156465 nC
+HipoChain::NextFile() 79 out of 172
+HipoChain::FirstFile() 79 out of 172
+Warning , hipo::schema getEntryOrder(const char *name) item :px not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :py not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :pz not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :edge not found, for bank REC::Traj data for this item is not valid 
+clas12databases::initQA pass = pass1 run =5238
+processed 293M events
+processed 294M events
+processed 295M events
+processed 296M events
+processed 297M events
+processed 298M events
+processed 299M events
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005238.hipo
+	 read 7508356 events from which 7367711 passed filtering conditions.
+	 accumulated charge past QA: 310085 nC
+HipoChain::NextFile() 80 out of 172
+HipoChain::FirstFile() 80 out of 172
+Warning , hipo::schema getEntryOrder(const char *name) item :px not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :py not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :pz not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :edge not found, for bank REC::Traj data for this item is not valid 
+clas12databases::initQA pass = pass1 run =5239
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005239.hipo
+	 read 6299320 events from which 0 passed filtering conditions.
+	 accumulated charge past QA: 0 nC
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005239.hipo
+	 read 6299320 events from which 0 passed filtering conditions.
+	 accumulated charge past QA: 0 nC
+HipoChain::NextFile() 81 out of 172
+HipoChain::FirstFile() 81 out of 172
+Warning , hipo::schema getEntryOrder(const char *name) item :px not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :py not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :pz not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :edge not found, for bank REC::Traj data for this item is not valid 
+clas12databases::initQA pass = pass1 run =5247
+processed 300M events
+processed 301M events
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005247.hipo
+	 read 8400802 events from which 1919145 passed filtering conditions.
+	 accumulated charge past QA: 81018.7 nC
+HipoChain::NextFile() 82 out of 172
+HipoChain::FirstFile() 82 out of 172
+Warning , hipo::schema getEntryOrder(const char *name) item :px not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :py not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :pz not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :edge not found, for bank REC::Traj data for this item is not valid 
+clas12databases::initQA pass = pass1 run =5248
+processed 302M events
+processed 303M events
+processed 304M events
+processed 305M events
+processed 306M events
+processed 307M events
+processed 308M events
+processed 309M events
+processed 310M events
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005248.hipo
+	 read 9311516 events from which 9311516 passed filtering conditions.
+	 accumulated charge past QA: 401352 nC
+HipoChain::NextFile() 83 out of 172
+HipoChain::FirstFile() 83 out of 172
+Warning , hipo::schema getEntryOrder(const char *name) item :px not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :py not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :pz not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :edge not found, for bank REC::Traj data for this item is not valid 
+clas12databases::initQA pass = pass1 run =5249
+processed 311M events
+processed 312M events
+processed 313M events
+processed 314M events
+processed 315M events
+Fill: Switching to new file: /lustre24/expphy/volatile/clas12/bulgakov/rga_valera/data/pass1_rga_inclusive_runs_valera.dat_1.root
+processed 316M events
+processed 317M events
+processed 318M events
+processed 319M events
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005249.hipo
+	 read 9335803 events from which 9297673 passed filtering conditions.
+	 accumulated charge past QA: 434539 nC
+HipoChain::NextFile() 84 out of 172
+HipoChain::FirstFile() 84 out of 172
+Warning , hipo::schema getEntryOrder(const char *name) item :px not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :py not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :pz not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :edge not found, for bank REC::Traj data for this item is not valid 
+clas12databases::initQA pass = pass1 run =5250
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005250.hipo
+	 read 6123040 events from which 0 passed filtering conditions.
+	 accumulated charge past QA: 0 nC
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005250.hipo
+	 read 6123040 events from which 0 passed filtering conditions.
+	 accumulated charge past QA: 0 nC
+HipoChain::NextFile() 85 out of 172
+HipoChain::FirstFile() 85 out of 172
+Warning , hipo::schema getEntryOrder(const char *name) item :px not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :py not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :pz not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :edge not found, for bank REC::Traj data for this item is not valid 
+clas12databases::initQA pass = pass1 run =5252
+processed 320M events
+processed 321M events
+processed 322M events
+processed 323M events
+processed 324M events
+processed 325M events
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005252.hipo
+	 read 5970466 events from which 5850505 passed filtering conditions.
+	 accumulated charge past QA: 272836 nC
+HipoChain::NextFile() 86 out of 172
+HipoChain::FirstFile() 86 out of 172
+Warning , hipo::schema getEntryOrder(const char *name) item :px not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :py not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :pz not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :edge not found, for bank REC::Traj data for this item is not valid 
+clas12databases::initQA pass = pass1 run =5253
+processed 326M events
+processed 327M events
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005253.hipo
+	 read 2128717 events from which 2128717 passed filtering conditions.
+	 accumulated charge past QA: 98629.5 nC
+HipoChain::NextFile() 87 out of 172
+HipoChain::FirstFile() 87 out of 172
+Warning , hipo::schema getEntryOrder(const char *name) item :px not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :py not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :pz not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :edge not found, for bank REC::Traj data for this item is not valid 
+clas12databases::initQA pass = pass1 run =5257
+processed 328M events
+processed 329M events
+processed 330M events
+processed 331M events
+processed 332M events
+processed 333M events
+processed 334M events
+processed 335M events
+processed 336M events
+processed 337M events
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005257.hipo
+	 read 9287950 events from which 9248443 passed filtering conditions.
+	 accumulated charge past QA: 430276 nC
+HipoChain::NextFile() 88 out of 172
+HipoChain::FirstFile() 88 out of 172
+Warning , hipo::schema getEntryOrder(const char *name) item :px not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :py not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :pz not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :edge not found, for bank REC::Traj data for this item is not valid 
+clas12databases::initQA pass = pass1 run =5258
+processed 338M events
+processed 339M events
+processed 340M events
+processed 341M events
+processed 342M events
+processed 343M events
+processed 344M events
+processed 345M events
+processed 346M events
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005258.hipo
+	 read 9280379 events from which 9215082 passed filtering conditions.
+	 accumulated charge past QA: 429167 nC
+HipoChain::NextFile() 89 out of 172
+HipoChain::FirstFile() 89 out of 172
+Warning , hipo::schema getEntryOrder(const char *name) item :px not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :py not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :pz not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :edge not found, for bank REC::Traj data for this item is not valid 
+clas12databases::initQA pass = pass1 run =5259
+processed 347M events
+processed 348M events
+processed 349M events
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005259.hipo
+	 read 3572954 events from which 3543100 passed filtering conditions.
+	 accumulated charge past QA: 161727 nC
+HipoChain::NextFile() 90 out of 172
+HipoChain::FirstFile() 90 out of 172
+Warning , hipo::schema getEntryOrder(const char *name) item :px not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :py not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :pz not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :edge not found, for bank REC::Traj data for this item is not valid 
+clas12databases::initQA pass = pass1 run =5261
+processed 350M events
+processed 351M events
+processed 352M events
+processed 353M events
+processed 354M events
+processed 355M events
+processed 356M events
+processed 357M events
+processed 358M events
+processed 359M events
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005261.hipo
+	 read 9305972 events from which 9227163 passed filtering conditions.
+	 accumulated charge past QA: 430571 nC
+HipoChain::NextFile() 91 out of 172
+HipoChain::FirstFile() 91 out of 172
+Warning , hipo::schema getEntryOrder(const char *name) item :px not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :py not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :pz not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :edge not found, for bank REC::Traj data for this item is not valid 
+clas12databases::initQA pass = pass1 run =5262
+processed 360M events
+processed 361M events
+processed 362M events
+processed 363M events
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005262.hipo
+	 read 4367796 events from which 4367796 passed filtering conditions.
+	 accumulated charge past QA: 202647 nC
+HipoChain::NextFile() 92 out of 172
+HipoChain::FirstFile() 92 out of 172
+Warning , hipo::schema getEntryOrder(const char *name) item :px not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :py not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :pz not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :edge not found, for bank REC::Traj data for this item is not valid 
+clas12databases::initQA pass = pass1 run =5300
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005300.hipo
+	 read 2880116 events from which 0 passed filtering conditions.
+	 accumulated charge past QA: 0 nC
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005300.hipo
+	 read 2880116 events from which 0 passed filtering conditions.
+	 accumulated charge past QA: 0 nC
+HipoChain::NextFile() 93 out of 172
+HipoChain::FirstFile() 93 out of 172
+Warning , hipo::schema getEntryOrder(const char *name) item :px not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :py not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :pz not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :edge not found, for bank REC::Traj data for this item is not valid 
+clas12databases::initQA pass = pass1 run =5301
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005301.hipo
+	 read 2096090 events from which 0 passed filtering conditions.
+	 accumulated charge past QA: 0 nC
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005301.hipo
+	 read 2096090 events from which 0 passed filtering conditions.
+	 accumulated charge past QA: 0 nC
+HipoChain::NextFile() 94 out of 172
+HipoChain::FirstFile() 94 out of 172
+Warning , hipo::schema getEntryOrder(const char *name) item :px not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :py not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :pz not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :edge not found, for bank REC::Traj data for this item is not valid 
+clas12databases::initQA pass = pass1 run =5302
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005302.hipo
+	 read 1469808 events from which 0 passed filtering conditions.
+	 accumulated charge past QA: 0 nC
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005302.hipo
+	 read 1469808 events from which 0 passed filtering conditions.
+	 accumulated charge past QA: 0 nC
+HipoChain::NextFile() 95 out of 172
+HipoChain::FirstFile() 95 out of 172
+Warning , hipo::schema getEntryOrder(const char *name) item :px not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :py not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :pz not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :edge not found, for bank REC::Traj data for this item is not valid 
+clas12databases::initQA pass = pass1 run =5303
+processed 364M events
+processed 365M events
+processed 366M events
+processed 367M events
+processed 368M events
+processed 369M events
+processed 370M events
+processed 371M events
+processed 372M events
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005303.hipo
+	 read 9118661 events from which 9084513 passed filtering conditions.
+	 accumulated charge past QA: 420564 nC
+HipoChain::NextFile() 96 out of 172
+HipoChain::FirstFile() 96 out of 172
+Warning , hipo::schema getEntryOrder(const char *name) item :px not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :py not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :pz not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :edge not found, for bank REC::Traj data for this item is not valid 
+clas12databases::initQA pass = pass1 run =5304
+processed 373M events
+processed 374M events
+processed 375M events
+processed 376M events
+processed 377M events
+processed 378M events
+processed 379M events
+processed 380M events
+processed 381M events
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005304.hipo
+	 read 8757747 events from which 8757747 passed filtering conditions.
+	 accumulated charge past QA: 406558 nC
+HipoChain::NextFile() 97 out of 172
+HipoChain::FirstFile() 97 out of 172
+Warning , hipo::schema getEntryOrder(const char *name) item :px not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :py not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :pz not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :edge not found, for bank REC::Traj data for this item is not valid 
+clas12databases::initQA pass = pass1 run =5305
+processed 382M events
+processed 383M events
+processed 384M events
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005305.hipo
+	 read 3391687 events from which 3391687 passed filtering conditions.
+	 accumulated charge past QA: 157358 nC
+HipoChain::NextFile() 98 out of 172
+HipoChain::FirstFile() 98 out of 172
+Warning , hipo::schema getEntryOrder(const char *name) item :px not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :py not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :pz not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :edge not found, for bank REC::Traj data for this item is not valid 
+clas12databases::initQA pass = pass1 run =5306
+processed 385M events
+processed 386M events
+processed 387M events
+processed 388M events
+processed 389M events
+processed 390M events
+processed 391M events
+processed 392M events
+processed 393M events
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005306.hipo
+	 read 8787924 events from which 8734031 passed filtering conditions.
+	 accumulated charge past QA: 401701 nC
+HipoChain::NextFile() 99 out of 172
+HipoChain::FirstFile() 99 out of 172
+Warning , hipo::schema getEntryOrder(const char *name) item :px not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :py not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :pz not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :edge not found, for bank REC::Traj data for this item is not valid 
+clas12databases::initQA pass = pass1 run =5307
+processed 394M events
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005307.hipo
+	 read 1037717 events from which 1037717 passed filtering conditions.
+	 accumulated charge past QA: 47816.4 nC
+HipoChain::NextFile() 100 out of 172
+HipoChain::FirstFile() 100 out of 172
+Warning , hipo::schema getEntryOrder(const char *name) item :px not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :py not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :pz not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :edge not found, for bank REC::Traj data for this item is not valid 
+clas12databases::initQA pass = pass1 run =5310
+processed 395M events
+processed 396M events
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005310.hipo
+	 read 2263346 events from which 2263346 passed filtering conditions.
+	 accumulated charge past QA: 105109 nC
+HipoChain::NextFile() 101 out of 172
+HipoChain::FirstFile() 101 out of 172
+Warning , hipo::schema getEntryOrder(const char *name) item :px not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :py not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :pz not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :edge not found, for bank REC::Traj data for this item is not valid 
+clas12databases::initQA pass = pass1 run =5311
+processed 397M events
+processed 398M events
+processed 399M events
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005311.hipo
+	 read 3033462 events from which 3033462 passed filtering conditions.
+	 accumulated charge past QA: 138911 nC
+HipoChain::NextFile() 102 out of 172
+HipoChain::FirstFile() 102 out of 172
+Warning , hipo::schema getEntryOrder(const char *name) item :px not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :py not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :pz not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :edge not found, for bank REC::Traj data for this item is not valid 
+clas12databases::initQA pass = pass1 run =5315
+processed 400M events
+processed 401M events
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005315.hipo
+	 read 2100000 events from which 2100000 passed filtering conditions.
+	 accumulated charge past QA: 97427.7 nC
+HipoChain::NextFile() 103 out of 172
+HipoChain::FirstFile() 103 out of 172
+Warning , hipo::schema getEntryOrder(const char *name) item :px not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :py not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :pz not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :edge not found, for bank REC::Traj data for this item is not valid 
+clas12databases::initQA pass = pass1 run =5316
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005316.hipo
+	 read 2256386 events from which 0 passed filtering conditions.
+	 accumulated charge past QA: 0 nC
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005316.hipo
+	 read 2256386 events from which 0 passed filtering conditions.
+	 accumulated charge past QA: 0 nC
+HipoChain::NextFile() 104 out of 172
+HipoChain::FirstFile() 104 out of 172
+Warning , hipo::schema getEntryOrder(const char *name) item :px not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :py not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :pz not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :edge not found, for bank REC::Traj data for this item is not valid 
+clas12databases::initQA pass = pass1 run =5317
+processed 402M events
+processed 403M events
+processed 404M events
+processed 405M events
+processed 406M events
+processed 407M events
+processed 408M events
+processed 409M events
+processed 410M events
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005317.hipo
+	 read 8692936 events from which 8653305 passed filtering conditions.
+	 accumulated charge past QA: 401966 nC
+HipoChain::NextFile() 105 out of 172
+HipoChain::FirstFile() 105 out of 172
+Warning , hipo::schema getEntryOrder(const char *name) item :px not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :py not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :pz not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :edge not found, for bank REC::Traj data for this item is not valid 
+clas12databases::initQA pass = pass1 run =5318
+processed 411M events
+processed 412M events
+processed 413M events
+processed 414M events
+processed 415M events
+processed 416M events
+processed 417M events
+processed 418M events
+processed 419M events
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005318.hipo
+	 read 8726698 events from which 8648608 passed filtering conditions.
+	 accumulated charge past QA: 400666 nC
+HipoChain::NextFile() 106 out of 172
+HipoChain::FirstFile() 106 out of 172
+Warning , hipo::schema getEntryOrder(const char *name) item :px not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :py not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :pz not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :edge not found, for bank REC::Traj data for this item is not valid 
+clas12databases::initQA pass = pass1 run =5319
+processed 420M events
+processed 421M events
+processed 422M events
+processed 423M events
+processed 424M events
+processed 425M events
+processed 426M events
+processed 427M events
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005319.hipo
+	 read 8826123 events from which 8792641 passed filtering conditions.
+	 accumulated charge past QA: 405694 nC
+HipoChain::NextFile() 107 out of 172
+HipoChain::FirstFile() 107 out of 172
+Warning , hipo::schema getEntryOrder(const char *name) item :px not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :py not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :pz not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :edge not found, for bank REC::Traj data for this item is not valid 
+clas12databases::initQA pass = pass1 run =5320
+processed 428M events
+processed 429M events
+processed 430M events
+processed 431M events
+processed 432M events
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005320.hipo
+	 read 4349442 events from which 4323149 passed filtering conditions.
+	 accumulated charge past QA: 200445 nC
+HipoChain::NextFile() 108 out of 172
+HipoChain::FirstFile() 108 out of 172
+Warning , hipo::schema getEntryOrder(const char *name) item :px not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :py not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :pz not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :edge not found, for bank REC::Traj data for this item is not valid 
+clas12databases::initQA pass = pass1 run =5323
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005323.hipo
+	 read 1394880 events from which 587165 passed filtering conditions.
+	 accumulated charge past QA: 27479.1 nC
+HipoChain::NextFile() 109 out of 172
+HipoChain::FirstFile() 109 out of 172
+Warning , hipo::schema getEntryOrder(const char *name) item :px not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :py not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :pz not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :edge not found, for bank REC::Traj data for this item is not valid 
+clas12databases::initQA pass = pass1 run =5324
+processed 433M events
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005324.hipo
+	 read 721835 events from which 721835 passed filtering conditions.
+	 accumulated charge past QA: 33812.9 nC
+HipoChain::NextFile() 110 out of 172
+HipoChain::FirstFile() 110 out of 172
+Warning , hipo::schema getEntryOrder(const char *name) item :px not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :py not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :pz not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :edge not found, for bank REC::Traj data for this item is not valid 
+clas12databases::initQA pass = pass1 run =5325
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005325.hipo
+	 read 2259714 events from which 0 passed filtering conditions.
+	 accumulated charge past QA: 0 nC
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005325.hipo
+	 read 2259714 events from which 0 passed filtering conditions.
+	 accumulated charge past QA: 0 nC
+HipoChain::NextFile() 111 out of 172
+HipoChain::FirstFile() 111 out of 172
+Warning , hipo::schema getEntryOrder(const char *name) item :px not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :py not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :pz not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :edge not found, for bank REC::Traj data for this item is not valid 
+clas12databases::initQA pass = pass1 run =5333
+processed 434M events
+processed 435M events
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005333.hipo
+	 read 2343047 events from which 2343047 passed filtering conditions.
+	 accumulated charge past QA: 99299.9 nC
+HipoChain::NextFile() 112 out of 172
+HipoChain::FirstFile() 112 out of 172
+Warning , hipo::schema getEntryOrder(const char *name) item :px not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :py not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :pz not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :edge not found, for bank REC::Traj data for this item is not valid 
+clas12databases::initQA pass = pass1 run =5334
+processed 436M events
+processed 437M events
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005334.hipo
+	 read 1656881 events from which 1656881 passed filtering conditions.
+	 accumulated charge past QA: 72452.3 nC
+HipoChain::NextFile() 113 out of 172
+HipoChain::FirstFile() 113 out of 172
+Warning , hipo::schema getEntryOrder(const char *name) item :px not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :py not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :pz not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :edge not found, for bank REC::Traj data for this item is not valid 
+clas12databases::initQA pass = pass1 run =5335
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005335.hipo
+	 read 375394 events from which 294129 passed filtering conditions.
+	 accumulated charge past QA: 13391.9 nC
+HipoChain::NextFile() 114 out of 172
+HipoChain::FirstFile() 114 out of 172
+Warning , hipo::schema getEntryOrder(const char *name) item :px not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :py not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :pz not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :edge not found, for bank REC::Traj data for this item is not valid 
+clas12databases::initQA pass = pass1 run =5336
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005336.hipo
+	 read 260946 events from which 0 passed filtering conditions.
+	 accumulated charge past QA: 0 nC
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005336.hipo
+	 read 260946 events from which 0 passed filtering conditions.
+	 accumulated charge past QA: 0 nC
+HipoChain::NextFile() 115 out of 172
+HipoChain::FirstFile() 115 out of 172
+Warning , hipo::schema getEntryOrder(const char *name) item :px not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :py not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :pz not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :edge not found, for bank REC::Traj data for this item is not valid 
+clas12databases::initQA pass = pass1 run =5339
+processed 438M events
+processed 439M events
+processed 440M events
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005339.hipo
+	 read 2165590 events from which 2165590 passed filtering conditions.
+	 accumulated charge past QA: 95397.9 nC
+HipoChain::NextFile() 116 out of 172
+HipoChain::FirstFile() 116 out of 172
+Warning , hipo::schema getEntryOrder(const char *name) item :px not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :py not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :pz not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :edge not found, for bank REC::Traj data for this item is not valid 
+clas12databases::initQA pass = pass1 run =5340
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005340.hipo
+	 read 4905254 events from which 791232 passed filtering conditions.
+	 accumulated charge past QA: 35553.8 nC
+HipoChain::NextFile() 117 out of 172
+HipoChain::FirstFile() 117 out of 172
+Warning , hipo::schema getEntryOrder(const char *name) item :px not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :py not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :pz not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :edge not found, for bank REC::Traj data for this item is not valid 
+clas12databases::initQA pass = pass1 run =5341
+processed 441M events
+processed 442M events
+processed 443M events
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005341.hipo
+	 read 3006248 events from which 2975596 passed filtering conditions.
+	 accumulated charge past QA: 124227 nC
+HipoChain::NextFile() 118 out of 172
+HipoChain::FirstFile() 118 out of 172
+Warning , hipo::schema getEntryOrder(const char *name) item :px not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :py not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :pz not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :edge not found, for bank REC::Traj data for this item is not valid 
+clas12databases::initQA pass = pass1 run =5342
+processed 444M events
+processed 445M events
+processed 446M events
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005342.hipo
+	 read 2797757 events from which 2750945 passed filtering conditions.
+	 accumulated charge past QA: 115739 nC
+HipoChain::NextFile() 119 out of 172
+HipoChain::FirstFile() 119 out of 172
+Warning , hipo::schema getEntryOrder(const char *name) item :px not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :py not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :pz not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :edge not found, for bank REC::Traj data for this item is not valid 
+clas12databases::initQA pass = pass1 run =5343
+processed 447M events
+processed 448M events
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005343.hipo
+	 read 1459659 events from which 1455747 passed filtering conditions.
+	 accumulated charge past QA: 60278.6 nC
+HipoChain::NextFile() 120 out of 172
+HipoChain::FirstFile() 120 out of 172
+Warning , hipo::schema getEntryOrder(const char *name) item :px not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :py not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :pz not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :edge not found, for bank REC::Traj data for this item is not valid 
+clas12databases::initQA pass = pass1 run =5344
+processed 449M events
+processed 450M events
+processed 451M events
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005344.hipo
+	 read 3780492 events from which 3780492 passed filtering conditions.
+	 accumulated charge past QA: 152308 nC
+HipoChain::NextFile() 121 out of 172
+HipoChain::FirstFile() 121 out of 172
+Warning , hipo::schema getEntryOrder(const char *name) item :px not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :py not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :pz not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :edge not found, for bank REC::Traj data for this item is not valid 
+clas12databases::initQA pass = pass1 run =5345
+processed 452M events
+processed 453M events
+processed 454M events
+processed 455M events
+processed 456M events
+processed 457M events
+processed 458M events
+processed 459M events
+processed 460M events
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005345.hipo
+	 read 9146815 events from which 9116989 passed filtering conditions.
+	 accumulated charge past QA: 382028 nC
+HipoChain::NextFile() 122 out of 172
+HipoChain::FirstFile() 122 out of 172
+Warning , hipo::schema getEntryOrder(const char *name) item :px not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :py not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :pz not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :edge not found, for bank REC::Traj data for this item is not valid 
+clas12databases::initQA pass = pass1 run =5346
+processed 461M events
+processed 462M events
+processed 463M events
+processed 464M events
+processed 465M events
+processed 466M events
+processed 467M events
+processed 468M events
+processed 469M events
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005346.hipo
+	 read 8970364 events from which 8925296 passed filtering conditions.
+	 accumulated charge past QA: 379346 nC
+HipoChain::NextFile() 123 out of 172
+HipoChain::FirstFile() 123 out of 172
+Warning , hipo::schema getEntryOrder(const char *name) item :px not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :py not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :pz not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :edge not found, for bank REC::Traj data for this item is not valid 
+clas12databases::initQA pass = pass1 run =5347
+processed 470M events
+processed 471M events
+processed 472M events
+processed 473M events
+processed 474M events
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005347.hipo
+	 read 4175487 events from which 4123297 passed filtering conditions.
+	 accumulated charge past QA: 178928 nC
+HipoChain::NextFile() 124 out of 172
+HipoChain::FirstFile() 124 out of 172
+Warning , hipo::schema getEntryOrder(const char *name) item :px not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :py not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :pz not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :edge not found, for bank REC::Traj data for this item is not valid 
+clas12databases::initQA pass = pass1 run =5349
+processed 475M events
+processed 476M events
+processed 477M events
+processed 478M events
+processed 479M events
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005349.hipo
+	 read 5704610 events from which 5704610 passed filtering conditions.
+	 accumulated charge past QA: 242454 nC
+HipoChain::NextFile() 125 out of 172
+HipoChain::FirstFile() 125 out of 172
+Warning , hipo::schema getEntryOrder(const char *name) item :px not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :py not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :pz not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :edge not found, for bank REC::Traj data for this item is not valid 
+clas12databases::initQA pass = pass1 run =5351
+processed 480M events
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005351.hipo
+	 read 1222575 events from which 1222575 passed filtering conditions.
+	 accumulated charge past QA: 52604.3 nC
+HipoChain::NextFile() 126 out of 172
+HipoChain::FirstFile() 126 out of 172
+Warning , hipo::schema getEntryOrder(const char *name) item :px not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :py not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :pz not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :edge not found, for bank REC::Traj data for this item is not valid 
+clas12databases::initQA pass = pass1 run =5354
+processed 481M events
+processed 482M events
+processed 483M events
+processed 484M events
+processed 485M events
+processed 486M events
+processed 487M events
+processed 488M events
+processed 489M events
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005354.hipo
+	 read 8913935 events from which 8875330 passed filtering conditions.
+	 accumulated charge past QA: 377576 nC
+HipoChain::NextFile() 127 out of 172
+HipoChain::FirstFile() 127 out of 172
+Warning , hipo::schema getEntryOrder(const char *name) item :px not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :py not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :pz not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :edge not found, for bank REC::Traj data for this item is not valid 
+clas12databases::initQA pass = pass1 run =5355
+processed 490M events
+processed 491M events
+processed 492M events
+processed 493M events
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005355.hipo
+	 read 4032803 events from which 4032803 passed filtering conditions.
+	 accumulated charge past QA: 170245 nC
+HipoChain::NextFile() 128 out of 172
+HipoChain::FirstFile() 128 out of 172
+Warning , hipo::schema getEntryOrder(const char *name) item :px not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :py not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :pz not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :edge not found, for bank REC::Traj data for this item is not valid 
+clas12databases::initQA pass = pass1 run =5356
+processed 494M events
+processed 495M events
+processed 496M events
+processed 497M events
+processed 498M events
+processed 499M events
+processed 500M events
+processed 501M events
+processed 502M events
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005356.hipo
+	 read 8672451 events from which 8672451 passed filtering conditions.
+	 accumulated charge past QA: 377070 nC
+HipoChain::NextFile() 129 out of 172
+HipoChain::FirstFile() 129 out of 172
+Warning , hipo::schema getEntryOrder(const char *name) item :px not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :py not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :pz not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :edge not found, for bank REC::Traj data for this item is not valid 
+clas12databases::initQA pass = pass1 run =5357
+processed 503M events
+processed 504M events
+processed 505M events
+processed 506M events
+processed 507M events
+processed 508M events
+processed 509M events
+processed 510M events
+processed 511M events
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005357.hipo
+	 read 8707706 events from which 8707706 passed filtering conditions.
+	 accumulated charge past QA: 377122 nC
+HipoChain::NextFile() 130 out of 172
+HipoChain::FirstFile() 130 out of 172
+Warning , hipo::schema getEntryOrder(const char *name) item :px not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :py not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :pz not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :edge not found, for bank REC::Traj data for this item is not valid 
+clas12databases::initQA pass = pass1 run =5358
+processed 512M events
+processed 513M events
+processed 514M events
+processed 515M events
+processed 516M events
+processed 517M events
+processed 518M events
+processed 519M events
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005358.hipo
+	 read 8739342 events from which 8739342 passed filtering conditions.
+	 accumulated charge past QA: 382403 nC
+HipoChain::NextFile() 131 out of 172
+HipoChain::FirstFile() 131 out of 172
+Warning , hipo::schema getEntryOrder(const char *name) item :px not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :py not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :pz not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :edge not found, for bank REC::Traj data for this item is not valid 
+clas12databases::initQA pass = pass1 run =5359
+processed 520M events
+processed 521M events
+processed 522M events
+processed 523M events
+processed 524M events
+processed 525M events
+processed 526M events
+processed 527M events
+processed 528M events
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005359.hipo
+	 read 8853805 events from which 8746741 passed filtering conditions.
+	 accumulated charge past QA: 382255 nC
+HipoChain::NextFile() 132 out of 172
+HipoChain::FirstFile() 132 out of 172
+Warning , hipo::schema getEntryOrder(const char *name) item :px not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :py not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :pz not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :edge not found, for bank REC::Traj data for this item is not valid 
+clas12databases::initQA pass = pass1 run =5360
+processed 529M events
+processed 530M events
+processed 531M events
+processed 532M events
+processed 533M events
+processed 534M events
+processed 535M events
+processed 536M events
+processed 537M events
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005360.hipo
+	 read 8793812 events from which 8759599 passed filtering conditions.
+	 accumulated charge past QA: 378618 nC
+HipoChain::NextFile() 133 out of 172
+HipoChain::FirstFile() 133 out of 172
+Warning , hipo::schema getEntryOrder(const char *name) item :px not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :py not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :pz not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :edge not found, for bank REC::Traj data for this item is not valid 
+clas12databases::initQA pass = pass1 run =5361
+processed 538M events
+processed 539M events
+processed 540M events
+processed 541M events
+processed 542M events
+processed 543M events
+processed 544M events
+processed 545M events
+processed 546M events
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005361.hipo
+	 read 8629289 events from which 8595413 passed filtering conditions.
+	 accumulated charge past QA: 372562 nC
+HipoChain::NextFile() 134 out of 172
+HipoChain::FirstFile() 134 out of 172
+Warning , hipo::schema getEntryOrder(const char *name) item :px not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :py not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :pz not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :edge not found, for bank REC::Traj data for this item is not valid 
+clas12databases::initQA pass = pass1 run =5362
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005362.hipo
+	 read 664890 events from which 649919 passed filtering conditions.
+	 accumulated charge past QA: 28149.7 nC
+HipoChain::NextFile() 135 out of 172
+HipoChain::FirstFile() 135 out of 172
+Warning , hipo::schema getEntryOrder(const char *name) item :px not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :py not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :pz not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :edge not found, for bank REC::Traj data for this item is not valid 
+clas12databases::initQA pass = pass1 run =5366
+processed 547M events
+processed 548M events
+processed 549M events
+processed 550M events
+processed 551M events
+processed 552M events
+processed 553M events
+processed 554M events
+processed 555M events
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005366.hipo
+	 read 9218328 events from which 9218328 passed filtering conditions.
+	 accumulated charge past QA: 393710 nC
+HipoChain::NextFile() 136 out of 172
+HipoChain::FirstFile() 136 out of 172
+Warning , hipo::schema getEntryOrder(const char *name) item :px not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :py not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :pz not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :edge not found, for bank REC::Traj data for this item is not valid 
+clas12databases::initQA pass = pass1 run =5367
+processed 556M events
+processed 557M events
+processed 558M events
+processed 559M events
+processed 560M events
+processed 561M events
+processed 562M events
+processed 563M events
+processed 564M events
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005367.hipo
+	 read 8468951 events from which 8468951 passed filtering conditions.
+	 accumulated charge past QA: 373381 nC
+HipoChain::NextFile() 137 out of 172
+HipoChain::FirstFile() 137 out of 172
+Warning , hipo::schema getEntryOrder(const char *name) item :px not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :py not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :pz not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :edge not found, for bank REC::Traj data for this item is not valid 
+clas12databases::initQA pass = pass1 run =5368
+processed 565M events
+processed 566M events
+processed 567M events
+processed 568M events
+processed 569M events
+processed 570M events
+processed 571M events
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005368.hipo
+	 read 7436405 events from which 7436405 passed filtering conditions.
+	 accumulated charge past QA: 327150 nC
+HipoChain::NextFile() 138 out of 172
+HipoChain::FirstFile() 138 out of 172
+Warning , hipo::schema getEntryOrder(const char *name) item :px not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :py not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :pz not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :edge not found, for bank REC::Traj data for this item is not valid 
+clas12databases::initQA pass = pass1 run =5369
+processed 572M events
+processed 573M events
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005369.hipo
+	 read 2346874 events from which 2158021 passed filtering conditions.
+	 accumulated charge past QA: 94684.2 nC
+HipoChain::NextFile() 139 out of 172
+HipoChain::FirstFile() 139 out of 172
+Warning , hipo::schema getEntryOrder(const char *name) item :px not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :py not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :pz not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :edge not found, for bank REC::Traj data for this item is not valid 
+clas12databases::initQA pass = pass1 run =5370
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005370.hipo
+	 read 1039120 events from which 0 passed filtering conditions.
+	 accumulated charge past QA: 0 nC
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005370.hipo
+	 read 1039120 events from which 0 passed filtering conditions.
+	 accumulated charge past QA: 0 nC
+HipoChain::NextFile() 140 out of 172
+HipoChain::FirstFile() 140 out of 172
+Warning , hipo::schema getEntryOrder(const char *name) item :px not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :py not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :pz not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :edge not found, for bank REC::Traj data for this item is not valid 
+clas12databases::initQA pass = pass1 run =5371
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005371.hipo
+	 read 162684 events from which 0 passed filtering conditions.
+	 accumulated charge past QA: 0 nC
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005371.hipo
+	 read 162684 events from which 0 passed filtering conditions.
+	 accumulated charge past QA: 0 nC
+HipoChain::NextFile() 141 out of 172
+HipoChain::FirstFile() 141 out of 172
+Warning , hipo::schema getEntryOrder(const char *name) item :px not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :py not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :pz not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :edge not found, for bank REC::Traj data for this item is not valid 
+clas12databases::initQA pass = pass1 run =5372
+processed 574M events
+processed 575M events
+processed 576M events
+processed 577M events
+processed 578M events
+processed 579M events
+processed 580M events
+processed 581M events
+processed 582M events
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005372.hipo
+	 read 8278669 events from which 8278669 passed filtering conditions.
+	 accumulated charge past QA: 369081 nC
+HipoChain::NextFile() 142 out of 172
+HipoChain::FirstFile() 142 out of 172
+Warning , hipo::schema getEntryOrder(const char *name) item :px not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :py not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :pz not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :edge not found, for bank REC::Traj data for this item is not valid 
+clas12databases::initQA pass = pass1 run =5373
+processed 583M events
+processed 584M events
+processed 585M events
+processed 586M events
+processed 587M events
+processed 588M events
+processed 589M events
+processed 590M events
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005373.hipo
+	 read 8150129 events from which 8150129 passed filtering conditions.
+	 accumulated charge past QA: 361669 nC
+HipoChain::NextFile() 143 out of 172
+HipoChain::FirstFile() 143 out of 172
+Warning , hipo::schema getEntryOrder(const char *name) item :px not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :py not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :pz not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :edge not found, for bank REC::Traj data for this item is not valid 
+clas12databases::initQA pass = pass1 run =5374
+processed 591M events
+processed 592M events
+processed 593M events
+processed 594M events
+processed 595M events
+processed 596M events
+processed 597M events
+processed 598M events
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005374.hipo
+	 read 8528867 events from which 8528867 passed filtering conditions.
+	 accumulated charge past QA: 382198 nC
+HipoChain::NextFile() 144 out of 172
+HipoChain::FirstFile() 144 out of 172
+Warning , hipo::schema getEntryOrder(const char *name) item :px not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :py not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :pz not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :edge not found, for bank REC::Traj data for this item is not valid 
+clas12databases::initQA pass = pass1 run =5375
+processed 599M events
+processed 600M events
+processed 601M events
+processed 602M events
+processed 603M events
+processed 604M events
+processed 605M events
+processed 606M events
+processed 607M events
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005375.hipo
+	 read 8622899 events from which 8582161 passed filtering conditions.
+	 accumulated charge past QA: 387490 nC
+HipoChain::NextFile() 145 out of 172
+HipoChain::FirstFile() 145 out of 172
+Warning , hipo::schema getEntryOrder(const char *name) item :px not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :py not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :pz not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :edge not found, for bank REC::Traj data for this item is not valid 
+clas12databases::initQA pass = pass1 run =5376
+processed 608M events
+processed 609M events
+processed 610M events
+processed 611M events
+processed 612M events
+processed 613M events
+processed 614M events
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005376.hipo
+	 read 6553042 events from which 6553042 passed filtering conditions.
+	 accumulated charge past QA: 290796 nC
+HipoChain::NextFile() 146 out of 172
+HipoChain::FirstFile() 146 out of 172
+Warning , hipo::schema getEntryOrder(const char *name) item :px not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :py not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :pz not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :edge not found, for bank REC::Traj data for this item is not valid 
+clas12databases::initQA pass = pass1 run =5377
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005377.hipo
+	 read 309844 events from which 309844 passed filtering conditions.
+	 accumulated charge past QA: 12941.5 nC
+HipoChain::NextFile() 147 out of 172
+HipoChain::FirstFile() 147 out of 172
+Warning , hipo::schema getEntryOrder(const char *name) item :px not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :py not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :pz not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :edge not found, for bank REC::Traj data for this item is not valid 
+clas12databases::initQA pass = pass1 run =5378
+processed 615M events
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005378.hipo
+	 read 840085 events from which 840085 passed filtering conditions.
+	 accumulated charge past QA: 36996.3 nC
+HipoChain::NextFile() 148 out of 172
+HipoChain::FirstFile() 148 out of 172
+Warning , hipo::schema getEntryOrder(const char *name) item :px not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :py not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :pz not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :edge not found, for bank REC::Traj data for this item is not valid 
+clas12databases::initQA pass = pass1 run =5379
+processed 616M events
+processed 617M events
+processed 618M events
+processed 619M events
+processed 620M events
+processed 621M events
+processed 622M events
+processed 623M events
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005379.hipo
+	 read 8703795 events from which 8703795 passed filtering conditions.
+	 accumulated charge past QA: 387531 nC
+HipoChain::NextFile() 149 out of 172
+HipoChain::FirstFile() 149 out of 172
+Warning , hipo::schema getEntryOrder(const char *name) item :px not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :py not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :pz not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :edge not found, for bank REC::Traj data for this item is not valid 
+clas12databases::initQA pass = pass1 run =5380
+processed 624M events
+processed 625M events
+processed 626M events
+processed 627M events
+processed 628M events
+processed 629M events
+Fill: Switching to new file: /lustre24/expphy/volatile/clas12/bulgakov/rga_valera/data/pass1_rga_inclusive_runs_valera.dat_2.root
+processed 630M events
+processed 631M events
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005380.hipo
+	 read 8051569 events from which 8051569 passed filtering conditions.
+	 accumulated charge past QA: 357707 nC
+HipoChain::NextFile() 150 out of 172
+HipoChain::FirstFile() 150 out of 172
+Warning , hipo::schema getEntryOrder(const char *name) item :px not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :py not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :pz not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :edge not found, for bank REC::Traj data for this item is not valid 
+clas12databases::initQA pass = pass1 run =5381
+processed 632M events
+processed 633M events
+processed 634M events
+processed 635M events
+processed 636M events
+processed 637M events
+processed 638M events
+processed 639M events
+processed 640M events
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005381.hipo
+	 read 8337598 events from which 8337598 passed filtering conditions.
+	 accumulated charge past QA: 371711 nC
+HipoChain::NextFile() 151 out of 172
+HipoChain::FirstFile() 151 out of 172
+Warning , hipo::schema getEntryOrder(const char *name) item :px not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :py not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :pz not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :edge not found, for bank REC::Traj data for this item is not valid 
+clas12databases::initQA pass = pass1 run =5382
+processed 641M events
+processed 642M events
+processed 643M events
+processed 644M events
+processed 645M events
+processed 646M events
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005382.hipo
+	 read 8181874 events from which 6410336 passed filtering conditions.
+	 accumulated charge past QA: 284935 nC
+HipoChain::NextFile() 152 out of 172
+HipoChain::FirstFile() 152 out of 172
+Warning , hipo::schema getEntryOrder(const char *name) item :px not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :py not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :pz not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :edge not found, for bank REC::Traj data for this item is not valid 
+clas12databases::initQA pass = pass1 run =5383
+processed 647M events
+processed 648M events
+processed 649M events
+processed 650M events
+processed 651M events
+processed 652M events
+processed 653M events
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005383.hipo
+	 read 6402974 events from which 6344955 passed filtering conditions.
+	 accumulated charge past QA: 281662 nC
+HipoChain::NextFile() 153 out of 172
+HipoChain::FirstFile() 153 out of 172
+Warning , hipo::schema getEntryOrder(const char *name) item :px not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :py not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :pz not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :edge not found, for bank REC::Traj data for this item is not valid 
+clas12databases::initQA pass = pass1 run =5386
+processed 654M events
+processed 655M events
+processed 656M events
+processed 657M events
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005386.hipo
+	 read 4421623 events from which 4421623 passed filtering conditions.
+	 accumulated charge past QA: 187210 nC
+HipoChain::NextFile() 154 out of 172
+HipoChain::FirstFile() 154 out of 172
+Warning , hipo::schema getEntryOrder(const char *name) item :px not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :py not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :pz not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :edge not found, for bank REC::Traj data for this item is not valid 
+clas12databases::initQA pass = pass1 run =5390
+processed 658M events
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005390.hipo
+	 read 584146 events from which 584146 passed filtering conditions.
+	 accumulated charge past QA: 26329.6 nC
+HipoChain::NextFile() 155 out of 172
+HipoChain::FirstFile() 155 out of 172
+Warning , hipo::schema getEntryOrder(const char *name) item :px not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :py not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :pz not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :edge not found, for bank REC::Traj data for this item is not valid 
+clas12databases::initQA pass = pass1 run =5391
+processed 659M events
+processed 660M events
+processed 661M events
+processed 662M events
+processed 663M events
+processed 664M events
+processed 665M events
+processed 666M events
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005391.hipo
+	 read 8299434 events from which 8299434 passed filtering conditions.
+	 accumulated charge past QA: 365707 nC
+HipoChain::NextFile() 156 out of 172
+HipoChain::FirstFile() 156 out of 172
+Warning , hipo::schema getEntryOrder(const char *name) item :px not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :py not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :pz not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :edge not found, for bank REC::Traj data for this item is not valid 
+clas12databases::initQA pass = pass1 run =5392
+processed 667M events
+processed 668M events
+processed 669M events
+processed 670M events
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005392.hipo
+	 read 4525947 events from which 4525947 passed filtering conditions.
+	 accumulated charge past QA: 198954 nC
+HipoChain::NextFile() 157 out of 172
+HipoChain::FirstFile() 157 out of 172
+Warning , hipo::schema getEntryOrder(const char *name) item :px not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :py not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :pz not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :edge not found, for bank REC::Traj data for this item is not valid 
+clas12databases::initQA pass = pass1 run =5393
+processed 671M events
+processed 672M events
+processed 673M events
+processed 674M events
+processed 675M events
+processed 676M events
+processed 677M events
+processed 678M events
+processed 679M events
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005393.hipo
+	 read 8210250 events from which 8210250 passed filtering conditions.
+	 accumulated charge past QA: 363850 nC
+HipoChain::NextFile() 158 out of 172
+HipoChain::FirstFile() 158 out of 172
+Warning , hipo::schema getEntryOrder(const char *name) item :px not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :py not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :pz not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :edge not found, for bank REC::Traj data for this item is not valid 
+clas12databases::initQA pass = pass1 run =5394
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005394.hipo
+	 read 2622113 events from which 0 passed filtering conditions.
+	 accumulated charge past QA: 0 nC
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005394.hipo
+	 read 2622113 events from which 0 passed filtering conditions.
+	 accumulated charge past QA: 0 nC
+HipoChain::NextFile() 159 out of 172
+HipoChain::FirstFile() 159 out of 172
+Warning , hipo::schema getEntryOrder(const char *name) item :px not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :py not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :pz not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :edge not found, for bank REC::Traj data for this item is not valid 
+clas12databases::initQA pass = pass1 run =5398
+processed 680M events
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005398.hipo
+	 read 945680 events from which 945680 passed filtering conditions.
+	 accumulated charge past QA: 42407.6 nC
+HipoChain::NextFile() 160 out of 172
+HipoChain::FirstFile() 160 out of 172
+Warning , hipo::schema getEntryOrder(const char *name) item :px not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :py not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :pz not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :edge not found, for bank REC::Traj data for this item is not valid 
+clas12databases::initQA pass = pass1 run =5399
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005399.hipo
+	 read 133676 events from which 0 passed filtering conditions.
+	 accumulated charge past QA: 0 nC
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005399.hipo
+	 read 133676 events from which 0 passed filtering conditions.
+	 accumulated charge past QA: 0 nC
+HipoChain::NextFile() 161 out of 172
+HipoChain::FirstFile() 161 out of 172
+Warning , hipo::schema getEntryOrder(const char *name) item :px not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :py not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :pz not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :edge not found, for bank REC::Traj data for this item is not valid 
+clas12databases::initQA pass = pass1 run =5400
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005400.hipo
+	 read 751109 events from which 0 passed filtering conditions.
+	 accumulated charge past QA: 0 nC
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005400.hipo
+	 read 751109 events from which 0 passed filtering conditions.
+	 accumulated charge past QA: 0 nC
+HipoChain::NextFile() 162 out of 172
+HipoChain::FirstFile() 162 out of 172
+Warning , hipo::schema getEntryOrder(const char *name) item :px not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :py not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :pz not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :edge not found, for bank REC::Traj data for this item is not valid 
+clas12databases::initQA pass = pass1 run =5401
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005401.hipo
+	 read 723570 events from which 714096 passed filtering conditions.
+	 accumulated charge past QA: 31765.7 nC
+HipoChain::NextFile() 163 out of 172
+HipoChain::FirstFile() 163 out of 172
+Warning , hipo::schema getEntryOrder(const char *name) item :px not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :py not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :pz not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :edge not found, for bank REC::Traj data for this item is not valid 
+clas12databases::initQA pass = pass1 run =5402
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005402.hipo
+	 read 824628 events from which 0 passed filtering conditions.
+	 accumulated charge past QA: 0 nC
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005402.hipo
+	 read 824628 events from which 0 passed filtering conditions.
+	 accumulated charge past QA: 0 nC
+HipoChain::NextFile() 164 out of 172
+HipoChain::FirstFile() 164 out of 172
+Warning , hipo::schema getEntryOrder(const char *name) item :px not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :py not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :pz not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :edge not found, for bank REC::Traj data for this item is not valid 
+clas12databases::initQA pass = pass1 run =5403
+processed 681M events
+processed 682M events
+processed 683M events
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005403.hipo
+	 read 2444571 events from which 2444571 passed filtering conditions.
+	 accumulated charge past QA: 110510 nC
+HipoChain::NextFile() 165 out of 172
+HipoChain::FirstFile() 165 out of 172
+Warning , hipo::schema getEntryOrder(const char *name) item :px not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :py not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :pz not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :edge not found, for bank REC::Traj data for this item is not valid 
+clas12databases::initQA pass = pass1 run =5404
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005404.hipo
+	 read 329420 events from which 329420 passed filtering conditions.
+	 accumulated charge past QA: 14970.5 nC
+HipoChain::NextFile() 166 out of 172
+HipoChain::FirstFile() 166 out of 172
+Warning , hipo::schema getEntryOrder(const char *name) item :px not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :py not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :pz not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :edge not found, for bank REC::Traj data for this item is not valid 
+clas12databases::initQA pass = pass1 run =5406
+processed 684M events
+processed 685M events
+processed 686M events
+processed 687M events
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005406.hipo
+	 read 4090458 events from which 4090458 passed filtering conditions.
+	 accumulated charge past QA: 179818 nC
+HipoChain::NextFile() 167 out of 172
+HipoChain::FirstFile() 167 out of 172
+Warning , hipo::schema getEntryOrder(const char *name) item :px not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :py not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :pz not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :edge not found, for bank REC::Traj data for this item is not valid 
+clas12databases::initQA pass = pass1 run =5407
+processed 688M events
+processed 689M events
+processed 690M events
+processed 691M events
+processed 692M events
+processed 693M events
+processed 694M events
+processed 695M events
+processed 696M events
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005407.hipo
+	 read 9335811 events from which 9335811 passed filtering conditions.
+	 accumulated charge past QA: 416414 nC
+HipoChain::NextFile() 168 out of 172
+HipoChain::FirstFile() 168 out of 172
+Warning , hipo::schema getEntryOrder(const char *name) item :px not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :py not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :pz not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :edge not found, for bank REC::Traj data for this item is not valid 
+clas12databases::initQA pass = pass1 run =5414
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005414.hipo
+	 read 270004 events from which 0 passed filtering conditions.
+	 accumulated charge past QA: 0 nC
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005414.hipo
+	 read 270004 events from which 0 passed filtering conditions.
+	 accumulated charge past QA: 0 nC
+HipoChain::NextFile() 169 out of 172
+HipoChain::FirstFile() 169 out of 172
+Warning , hipo::schema getEntryOrder(const char *name) item :px not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :py not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :pz not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :edge not found, for bank REC::Traj data for this item is not valid 
+clas12databases::initQA pass = pass1 run =5415
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005415.hipo
+	 read 117954 events from which 0 passed filtering conditions.
+	 accumulated charge past QA: 0 nC
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005415.hipo
+	 read 117954 events from which 0 passed filtering conditions.
+	 accumulated charge past QA: 0 nC
+HipoChain::NextFile() 170 out of 172
+HipoChain::FirstFile() 170 out of 172
+Warning , hipo::schema getEntryOrder(const char *name) item :px not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :py not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :pz not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :edge not found, for bank REC::Traj data for this item is not valid 
+clas12databases::initQA pass = pass1 run =5416
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005416.hipo
+	 read 357590 events from which 0 passed filtering conditions.
+	 accumulated charge past QA: 0 nC
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005416.hipo
+	 read 357590 events from which 0 passed filtering conditions.
+	 accumulated charge past QA: 0 nC
+HipoChain::NextFile() 171 out of 172
+HipoChain::FirstFile() 171 out of 172
+Warning , hipo::schema getEntryOrder(const char *name) item :px not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :py not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :pz not found, for bank RECFT::Particle data for this item is not valid 
+Warning , hipo::schema getEntryOrder(const char *name) item :edge not found, for bank REC::Traj data for this item is not valid 
+clas12databases::initQA pass = pass1 run =5418
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005418.hipo
+	 read 2011085 events from which 0 passed filtering conditions.
+	 accumulated charge past QA: 0 nC
+for file /cache/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4/skim4_005418.hipo
+	 read 2011085 events from which 0 passed filtering conditions.
+	 accumulated charge past QA: 0 nC
+HipoChain::NextFile() 172 out of 172
+HipoChain::FirstFile() 172 out of 172
+Accumulated charge post QA 2: qadb_reader::getChargeForRunlist Reading Run 5032
+qadb_reader::getChargeForRunlist Reading Run 5036
+qadb_reader::getChargeForRunlist Reading Run 5038
+qadb_reader::getChargeForRunlist Reading Run 5039
+qadb_reader::getChargeForRunlist Reading Run 5040
+qadb_reader::getChargeForRunlist Reading Run 5041
+qadb_reader::getChargeForRunlist Reading Run 5043
+qadb_reader::getChargeForRunlist Reading Run 5045
+qadb_reader::getChargeForRunlist Reading Run 5046
+qadb_reader::getChargeForRunlist Reading Run 5047
+qadb_reader::getChargeForRunlist Reading Run 5051
+qadb_reader::getChargeForRunlist Reading Run 5052
+qadb_reader::getChargeForRunlist Reading Run 5053
+qadb_reader::getChargeForRunlist Reading Run 5116
+qadb_reader::getChargeForRunlist Reading Run 5117
+qadb_reader::getChargeForRunlist Reading Run 5119
+qadb_reader::getChargeForRunlist Reading Run 5120
+qadb_reader::getChargeForRunlist Reading Run 5124
+qadb_reader::getChargeForRunlist Reading Run 5125
+qadb_reader::getChargeForRunlist Reading Run 5126
+qadb_reader::getChargeForRunlist Reading Run 5127
+qadb_reader::getChargeForRunlist Reading Run 5128
+qadb_reader::getChargeForRunlist Reading Run 5129
+qadb_reader::getChargeForRunlist Reading Run 5130
+qadb_reader::getChargeForRunlist Reading Run 5137
+qadb_reader::getChargeForRunlist Reading Run 5138
+qadb_reader::getChargeForRunlist Reading Run 5139
+qadb_reader::getChargeForRunlist Reading Run 5153
+qadb_reader::getChargeForRunlist Reading Run 5158
+qadb_reader::getChargeForRunlist Reading Run 5159
+qadb_reader::getChargeForRunlist Reading Run 5160
+qadb_reader::getChargeForRunlist Reading Run 5162
+qadb_reader::getChargeForRunlist Reading Run 5163
+qadb_reader::getChargeForRunlist Reading Run 5164
+qadb_reader::getChargeForRunlist Reading Run 5165
+qadb_reader::getChargeForRunlist Reading Run 5166
+qadb_reader::getChargeForRunlist Reading Run 5167
+qadb_reader::getChargeForRunlist Reading Run 5168
+qadb_reader::getChargeForRunlist Reading Run 5169
+qadb_reader::getChargeForRunlist Reading Run 5180
+qadb_reader::getChargeForRunlist Reading Run 5181
+qadb_reader::getChargeForRunlist Reading Run 5182
+qadb_reader::getChargeForRunlist Reading Run 5183
+qadb_reader::getChargeForRunlist Reading Run 5189
+qadb_reader::getChargeForRunlist Reading Run 5190
+qadb_reader::getChargeForRunlist Reading Run 5191
+qadb_reader::getChargeForRunlist Reading Run 5193
+qadb_reader::getChargeForRunlist Reading Run 5194
+qadb_reader::getChargeForRunlist Reading Run 5195
+qadb_reader::getChargeForRunlist Reading Run 5196
+qadb_reader::getChargeForRunlist Reading Run 5197
+qadb_reader::getChargeForRunlist Reading Run 5198
+qadb_reader::getChargeForRunlist Reading Run 5199
+qadb_reader::getChargeForRunlist Reading Run 5200
+qadb_reader::getChargeForRunlist Reading Run 5201
+qadb_reader::getChargeForRunlist Reading Run 5202
+qadb_reader::getChargeForRunlist Reading Run 5203
+qadb_reader::getChargeForRunlist Reading Run 5204
+qadb_reader::getChargeForRunlist Reading Run 5205
+qadb_reader::getChargeForRunlist Reading Run 5206
+qadb_reader::getChargeForRunlist Reading Run 5208
+qadb_reader::getChargeForRunlist Reading Run 5211
+qadb_reader::getChargeForRunlist Reading Run 5212
+qadb_reader::getChargeForRunlist Reading Run 5215
+qadb_reader::getChargeForRunlist Reading Run 5216
+qadb_reader::getChargeForRunlist Reading Run 5219
+qadb_reader::getChargeForRunlist Reading Run 5220
+qadb_reader::getChargeForRunlist Reading Run 5221
+qadb_reader::getChargeForRunlist Reading Run 5222
+qadb_reader::getChargeForRunlist Reading Run 5223
+qadb_reader::getChargeForRunlist Reading Run 5225
+qadb_reader::getChargeForRunlist Reading Run 5229
+qadb_reader::getChargeForRunlist Reading Run 5230
+qadb_reader::getChargeForRunlist Reading Run 5231
+qadb_reader::getChargeForRunlist Reading Run 5232
+qadb_reader::getChargeForRunlist Reading Run 5233
+qadb_reader::getChargeForRunlist Reading Run 5234
+qadb_reader::getChargeForRunlist Reading Run 5235
+qadb_reader::getChargeForRunlist Reading Run 5237
+qadb_reader::getChargeForRunlist Reading Run 5238
+qadb_reader::getChargeForRunlist Reading Run 5239
+qadb_reader::getChargeForRunlist Reading Run 5247
+qadb_reader::getChargeForRunlist Reading Run 5248
+qadb_reader::getChargeForRunlist Reading Run 5249
+qadb_reader::getChargeForRunlist Reading Run 5250
+qadb_reader::getChargeForRunlist Reading Run 5252
+qadb_reader::getChargeForRunlist Reading Run 5253
+qadb_reader::getChargeForRunlist Reading Run 5257
+qadb_reader::getChargeForRunlist Reading Run 5258
+qadb_reader::getChargeForRunlist Reading Run 5259
+qadb_reader::getChargeForRunlist Reading Run 5261
+qadb_reader::getChargeForRunlist Reading Run 5262
+qadb_reader::getChargeForRunlist Reading Run 5300
+qadb_reader::getChargeForRunlist Reading Run 5301
+qadb_reader::getChargeForRunlist Reading Run 5302
+qadb_reader::getChargeForRunlist Reading Run 5303
+qadb_reader::getChargeForRunlist Reading Run 5304
+qadb_reader::getChargeForRunlist Reading Run 5305
+qadb_reader::getChargeForRunlist Reading Run 5306
+qadb_reader::getChargeForRunlist Reading Run 5307
+qadb_reader::getChargeForRunlist Reading Run 5310
+qadb_reader::getChargeForRunlist Reading Run 5311
+qadb_reader::getChargeForRunlist Reading Run 5315
+qadb_reader::getChargeForRunlist Reading Run 5316
+qadb_reader::getChargeForRunlist Reading Run 5317
+qadb_reader::getChargeForRunlist Reading Run 5318
+qadb_reader::getChargeForRunlist Reading Run 5319
+qadb_reader::getChargeForRunlist Reading Run 5320
+qadb_reader::getChargeForRunlist Reading Run 5323
+qadb_reader::getChargeForRunlist Reading Run 5324
+qadb_reader::getChargeForRunlist Reading Run 5325
+qadb_reader::getChargeForRunlist Reading Run 5333
+qadb_reader::getChargeForRunlist Reading Run 5334
+qadb_reader::getChargeForRunlist Reading Run 5335
+qadb_reader::getChargeForRunlist Reading Run 5336
+qadb_reader::getChargeForRunlist Reading Run 5339
+qadb_reader::getChargeForRunlist Reading Run 5340
+qadb_reader::getChargeForRunlist Reading Run 5341
+qadb_reader::getChargeForRunlist Reading Run 5342
+qadb_reader::getChargeForRunlist Reading Run 5343
+qadb_reader::getChargeForRunlist Reading Run 5344
+qadb_reader::getChargeForRunlist Reading Run 5345
+qadb_reader::getChargeForRunlist Reading Run 5346
+qadb_reader::getChargeForRunlist Reading Run 5347
+qadb_reader::getChargeForRunlist Reading Run 5349
+qadb_reader::getChargeForRunlist Reading Run 5351
+qadb_reader::getChargeForRunlist Reading Run 5354
+qadb_reader::getChargeForRunlist Reading Run 5355
+qadb_reader::getChargeForRunlist Reading Run 5356
+qadb_reader::getChargeForRunlist Reading Run 5357
+qadb_reader::getChargeForRunlist Reading Run 5358
+qadb_reader::getChargeForRunlist Reading Run 5359
+qadb_reader::getChargeForRunlist Reading Run 5360
+qadb_reader::getChargeForRunlist Reading Run 5361
+qadb_reader::getChargeForRunlist Reading Run 5362
+qadb_reader::getChargeForRunlist Reading Run 5366
+qadb_reader::getChargeForRunlist Reading Run 5367
+qadb_reader::getChargeForRunlist Reading Run 5368
+qadb_reader::getChargeForRunlist Reading Run 5369
+qadb_reader::getChargeForRunlist Reading Run 5370
+qadb_reader::getChargeForRunlist Reading Run 5371
+qadb_reader::getChargeForRunlist Reading Run 5372
+qadb_reader::getChargeForRunlist Reading Run 5373
+qadb_reader::getChargeForRunlist Reading Run 5374
+qadb_reader::getChargeForRunlist Reading Run 5375
+qadb_reader::getChargeForRunlist Reading Run 5376
+qadb_reader::getChargeForRunlist Reading Run 5377
+qadb_reader::getChargeForRunlist Reading Run 5378
+qadb_reader::getChargeForRunlist Reading Run 5379
+qadb_reader::getChargeForRunlist Reading Run 5380
+qadb_reader::getChargeForRunlist Reading Run 5381
+qadb_reader::getChargeForRunlist Reading Run 5382
+qadb_reader::getChargeForRunlist Reading Run 5383
+qadb_reader::getChargeForRunlist Reading Run 5386
+qadb_reader::getChargeForRunlist Reading Run 5390
+qadb_reader::getChargeForRunlist Reading Run 5391
+qadb_reader::getChargeForRunlist Reading Run 5392
+qadb_reader::getChargeForRunlist Reading Run 5393
+qadb_reader::getChargeForRunlist Reading Run 5394
+qadb_reader::getChargeForRunlist Reading Run 5398
+qadb_reader::getChargeForRunlist Reading Run 5399
+qadb_reader::getChargeForRunlist Reading Run 5400
+qadb_reader::getChargeForRunlist Reading Run 5401
+qadb_reader::getChargeForRunlist Reading Run 5402
+qadb_reader::getChargeForRunlist Reading Run 5403
+qadb_reader::getChargeForRunlist Reading Run 5404
+qadb_reader::getChargeForRunlist Reading Run 5406
+qadb_reader::getChargeForRunlist Reading Run 5407
+qadb_reader::getChargeForRunlist Reading Run 5414
+qadb_reader::getChargeForRunlist Reading Run 5415
+qadb_reader::getChargeForRunlist Reading Run 5416
+qadb_reader::getChargeForRunlist Reading Run 5418
+3.05033e+07 nC
+Accumulated charge good 2: 3.05033e+07 nC
