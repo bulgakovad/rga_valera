@@ -1,7 +1,7 @@
 // source ~/.cshrc
 // root
 // gSystem->Load("libRooUnfold");
-// .L ana12_jan6_xsec_sys_forAlex.cxx+
+// .L step2_macro.cxx+
 // fix the warnings!!!
 // ana12_sys(1) data or ana12_sys(0) - simu
 
@@ -87,8 +87,6 @@ void getBinFold2D(double wRec, double wGen, double q2Rec, double q2Gen, int& bin
     return;
     
 }
-
-//////////////////////////////////////////////////Function prototypes for cuts. Defenition is at the end/////////////////////////////////
 
 double kin_W(TLorentzVector ele, float Ebeam);
 double kin_Q2(TLorentzVector ele, float Ebeam);
@@ -297,7 +295,6 @@ void fastMC(void){
         myMC = new TRandom3(0);
 }
 
-///////////////////////////////////////////////////End func prototypes////////////////////////////////////////////////////////////////////////////////////////////////////
 
 vector<string> GetFilesPath(int typeData, int simQ2range){
     //simQ2range:
@@ -554,7 +551,7 @@ void ana12_sys(int isData){
 	
 	
     
-///// different bin size effect and Bin purity: ///       
+///// differen bin size effect and Bin purity: ///       
     vector<size_t> wNumBim = {size_t((highBorderW-lowBorderW)/0.03), nWBins, size_t((highBorderW-lowBorderW)/0.02), size_t((highBorderW-lowBorderW)/0.01)};
     const size_t wNumBinSize = wNumBim.size();
     TH1D *WQ2_WRecAndWGen[6][wNumBinSize][qBinMax];
@@ -744,7 +741,10 @@ void ana12_sys(int isData){
         bini_2D_rec[s] = new TH1D(("bini_2D_rec" + hist_name_end).c_str(), ("bini_2D_rec" + hist_name_end).c_str(), MatrixDimens2D, -0.5, MatrixDimens2D - 0.5);
         xini_2D_gen[s] = new TH1D(("xini_2D_gen" + hist_name_end).c_str(), ("xini_2D_gen" + hist_name_end).c_str(), MatrixDimens2D, -0.5, MatrixDimens2D - 0.5);
         Adet_2D_genVSrec[s] = new TH2D(("Adet_2D_genVSrec" + hist_name_end).c_str(), ("Adet_2D_genVSrec" + hist_name_end).c_str()
-                                       , MatrixDimens2D, -0.5, MatrixDimens2D - 0.5, MatrixDimens2D, -0.5, MatrixDimens2D - 0.5);                              
+                                       , MatrixDimens2D, -0.5, MatrixDimens2D - 0.5, MatrixDimens2D, -0.5, MatrixDimens2D - 0.5);
+                                       
+                             
+                                       
     }
     
     
@@ -3951,13 +3951,9 @@ auto dpp_Sim = [&](float mom){
 
 	resultsF->Close();
 	cout << "writing 11"<<endl;
+}
 
-}  // End of ana12()
 
-
-///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-/////////////////////////////////////////////////////////////DEFENITIONS OF CUT FUNCTIONS USED ABOVE//////////////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 double kin_W(TLorentzVector ele, float Ebeam){
 	TLorentzVector beam(0,0,Ebeam,Ebeam);
@@ -4093,8 +4089,6 @@ bool DCFidXY(float X, float Y, int region, int sector, int cutLevel){
 			}
 			htccEffFile.close();
 		}
-
-
 		void readTriangleCut(float cutParams[6][10][2], int isData){
 			ifstream fData("../params/dataTriangleCut.dat");
 			ifstream fSim("../params/simTriangleCut.dat");

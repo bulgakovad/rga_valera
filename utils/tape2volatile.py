@@ -13,7 +13,8 @@ def run_command(command):
         return str(e)
 
 
-path = "/mss/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4"
+#path = "/mss/clas12/rg-a/production/recon/fall2018/torus-1/pass1/v0/dst/train/skim4"
+path = "/w/mss/clas12/rg-k/production/recon/fall2018/torus+1/6535MeV/pass2/v0/dst/recon/005992" # rgk pass 2
 
 # List all files in the specified path
 try:
