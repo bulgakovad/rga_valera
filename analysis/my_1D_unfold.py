@@ -125,7 +125,22 @@ print("end cell 1")
 
 #----------------------------------------End Cell 1 -------------------------------------------------------
 #----------------------------------------Cell 2 -------------------------------------------------------
-# 1D unfolding RooUnfold by W in each fixed Q2 bin
+# Linearized 1D unfolding on the full (W,Q2) grid:
+# global_bin = iQ2 * nWBins + iW
+#
+# This is still a 1D RooUnfold, but now it can correct both:
+#   - W migration
+#   - migration between neighboring Q2 bins
+#
+# It uses the linearized response objects already written by the .cxx macro:
+#   SIM : UnfoldingS{1..6}/measured, truth, response
+#   DATA: Unfolding/measAll_S{sec}
+
+LIN_NSEC   = 6
+LIN_NQ2    = 11
+LIN_WMIN   = 0.875
+LIN_WMAX   = 2.875
+LIN_WBINS  = int(round((LIN_WMAX - LIN_WMIN) / 0.05))   # should be 40
 
 def _must_get(root_file, key):
     obj = root_file.Get(key)
@@ -133,159 +148,193 @@ def _must_get(root_file, key):
         raise RuntimeError(f"Cannot find object: {key}")
     return obj
 
+def _must_get_any(root_file, keys):
+    for key in keys:
+        obj = root_file.Get(key)
+        if obj:
+            return obj
+    raise RuntimeError("Cannot find any of these objects:\n  " + "\n  ".join(keys))
+
 def _clone_detached(h, new_name):
     hc = h.Clone(new_name)
     hc.SetDirectory(0)
     return hc
 
-# 1D unfolding response
-def getResponse1D(fileSim, MSL, TSML, RSL, ORSL):
-    nSec = 6
-    nQ2bins = 11
+def _infer_linearized_nWbins(h_lin, nQ2bins=LIN_NQ2):
+    nGlobal = h_lin.GetNbinsX()
+    if nGlobal % nQ2bins != 0:
+        raise RuntimeError(
+            f"Linearized histogram has {nGlobal} bins, which is not divisible by nQ2bins={nQ2bins}"
+        )
+    return nGlobal // nQ2bins
 
-    for sec in range(nSec):
-        MSL.append([])
-        TSML.append([])
-        RSL.append([])
-        ORSL.append([])
+def getResponseLinearized1D(fileSim, MSL, TSML, RSL, ORSL):
+    """
+    Read already-linearized response objects from the SIM root file.
 
-        for iQ2 in range(nQ2bins):
-            fold = f'Deconv1D/S{sec}/Q2_{iQ2}/'
+    Expected folders from the .cxx macro:
+      UnfoldingS1/, UnfoldingS2/, ..., UnfoldingS6/
 
-            h_meas  = _must_get(fileSim, fold + 'measured')
-            h_truth = _must_get(fileSim, fold + 'truth')
-            h_resp  = _must_get(fileSim, fold + 'response')
+    Expected object names in each folder:
+      measured
+      truth
+      response
+    """
+    for sec in range(LIN_NSEC):
+        fold = f'UnfoldingS{sec+1}/'
 
-            MSL[-1].append(h_meas)
-            TSML[-1].append(h_truth)
-            RSL[-1].append(h_resp)
-            ORSL[-1].append(ROOT.RooUnfoldResponse(MSL[-1][-1], TSML[-1][-1], RSL[-1][-1]))
+        h_meas = _must_get_any(fileSim, [
+            fold + 'measured',
+            fold + 'measured;1',
+        ])
+        h_truth = _must_get_any(fileSim, [
+            fold + 'truth',
+            fold + 'truth;1',
+        ])
+        h_resp = _must_get_any(fileSim, [
+            fold + 'response',
+            fold + 'response;1',
+        ])
 
-# GetXSEC using 1D RooUnfold methods
-def GetXSEC_roo1D(fileSim, fileData, outXSEC, addN, chargeFC_tmp, regParam, method='bayes'):
-    # regParam is nIter for bayes or i_comp for SVD
-    if (method != 'bayes' and method != 'bbb' and method != 'svd'):
+        h_meas  = _clone_detached(h_meas,  f'lin_measured_sec{sec}')
+        h_truth = _clone_detached(h_truth, f'lin_truth_sec{sec}')
+        h_resp  = _clone_detached(h_resp,  f'lin_response_sec{sec}')
+
+        MSL.append(h_meas)
+        TSML.append(h_truth)
+        RSL.append(h_resp)
+        ORSL.append(ROOT.RooUnfoldResponse(MSL[-1], TSML[-1], RSL[-1]))
+
+def UnlinearizeWQ2(histIN_lin, listHistsOUT, nameEnd='', nQ2bins=LIN_NQ2, wMin=LIN_WMIN, wMax=LIN_WMAX):
+    """
+    Convert one unfolded linearized 1D histogram back into a list of 1D W histograms,
+    one per fixed Q2 bin.
+
+    Global-bin convention:
+        global_bin_0based = iQ2 * nWBins + iW
+    """
+    nWBins = _infer_linearized_nWbins(histIN_lin, nQ2bins=nQ2bins)
+
+    for iQ2 in range(nQ2bins):
+        histN = f'wUnf_Q2_{iQ2+1}'
+        h_out = ROOT.TH1D(histN + nameEnd, histN + nameEnd, nWBins, wMin, wMax)
+        h_out.SetDirectory(0)
+
+        for iW in range(nWBins):
+            global_bin = iQ2 * nWBins + iW + 1   # ROOT bins start at 1
+            h_out.SetBinContent(iW + 1, histIN_lin.GetBinContent(global_bin))
+            h_out.SetBinError(iW + 1,   histIN_lin.GetBinError(global_bin))
+
+        listHistsOUT.append(h_out)
+
+def GetXSEC_rooLIN1D(fileSim, fileData, outXSEC, addN, chargeFC_tmp, regParam, method='bayes'):
+    """
+    Linearized 1D unfolding:
+      - unfold one flattened (W,Q2) histogram per sector
+      - unflatten back into W histograms for each Q2 bin
+      - normalize and apply corrections exactly as before
+
+    Output contract stays the same:
+      outXSEC[iQ2][sec]
+    """
+    if method not in ['bayes', 'bbb', 'svd']:
         print('unsupported deconvolution method is used, please put bayes or bbb or svd')
         return
 
-    # sectors
-    nSec = 6
-    # number of Q2 bins
-    nQ2bins = 11
+    nSec = LIN_NSEC
+    nQ2bins = LIN_NQ2
 
-    # initialization of internal RooUnfold matrices and struct.
+    # read linearized MC response
     tmp_measuredL = []
     tmp_truthL = []
     tmp_respMatL = []
     tmp_respObjL = []
+    getResponseLinearized1D(fileSim, tmp_measuredL, tmp_truthL, tmp_respMatL, tmp_respObjL)
 
-    # read root file Sim
-    getResponse1D(fileSim, tmp_measuredL, tmp_truthL, tmp_respMatL, tmp_respObjL)
-
-    # measured from Data
+    # read linearized measured DATA histograms
     tmp_hMeas = []
-
-    # read root file Data
     for sec in range(nSec):
-        tmp_hMeas.append([])
-        for iQ2 in range(nQ2bins):
-            fold = f'Deconv1D/S{sec}/Q2_{iQ2}_my/'
-            tmp_hMeas[-1].append(_must_get(fileData, fold + f'measured1D_DATA_S{sec}_Q2_{iQ2}'))
+        h_data = _must_get_any(fileData, [
+            f'Unfolding/measAll_S{sec}',
+            f'Unfolding/measAll_S{sec};1',
+        ])
+        tmp_hMeas.append(_clone_detached(h_data, f'lin_meas_data_sec{sec}_{addN}'))
 
-    # RooUnfoldObjs
+    # actual unfolding
     tmp_unfold = []
-    tmp_hUnfold = []
+    tmp_hUnfold_lin = []
 
     for sec in range(nSec):
-        tmp_unfold.append([])
-        tmp_hUnfold.append([])
+        if method == 'bayes':
+            unf = ROOT.RooUnfoldBayes(tmp_respObjL[sec], tmp_hMeas[sec], regParam)
+        elif method == 'bbb':
+            unf = ROOT.RooUnfoldBinByBin(tmp_respObjL[sec], tmp_hMeas[sec])
+        elif method == 'svd':
+            unf = ROOT.RooUnfoldSvd(tmp_respObjL[sec], tmp_hMeas[sec], regParam)
 
-        for iQ2 in range(nQ2bins):
+        unf.IncludeSystematics(0)
+        unf.SetOverflow(0)
 
-            # method selection
-            if (method == 'bayes'):
-                unf = ROOT.RooUnfoldBayes(tmp_respObjL[sec][iQ2], tmp_hMeas[sec][iQ2], regParam)
+        h_unf_lin = unf.Hunfold()
+        h_unf_lin = _clone_detached(h_unf_lin, f'hUnfoldLIN1D_sec{sec}_{addN}')
 
-            if (method == 'bbb'):
-                unf = ROOT.RooUnfoldBinByBin(tmp_respObjL[sec][iQ2], tmp_hMeas[sec][iQ2])
+        tmp_unfold.append(unf)
+        tmp_hUnfold_lin.append(h_unf_lin)
 
-            if (method == 'svd'):
-                unf = ROOT.RooUnfoldSvd(tmp_respObjL[sec][iQ2], tmp_hMeas[sec][iQ2], regParam)
-
-            #####################################
-            # errors accounting
-            unf.IncludeSystematics(0)
-            unf.SetOverflow(0)
-            # unf.SetVerbose(2)
-            ######################################
-
-            # Actual deconvolution
-            h_unf = unf.Hunfold()
-            h_unf = _clone_detached(h_unf, f'hUnfold1D_sec{sec}_Q2bin{iQ2}_{addN}')
-
-            tmp_unfold[-1].append(unf)
-            tmp_hUnfold[-1].append(h_unf)
-
-    # unfolded 1D W-yields
+    # convert flattened unfolded hist -> list of W histograms per Q2 bin
     wYield1D = []
-
     for sec in range(nSec):
         wYield1D.append([])
-        for iQ2 in range(nQ2bins):
-            wYield1D[-1].append(_clone_detached(tmp_hUnfold[sec][iQ2], f'wYield1D_sec{sec}_Q2bin{iQ2}_{addN}'))
+        UnlinearizeWQ2(tmp_hUnfold_lin[sec], wYield1D[-1], nameEnd=f'_{addN}_sec{sec}')
 
-    # read file with all the corrections factors
-    # corrDF = pd.read_csv('/home/valerii/Clas12/Inclusive/xsecs/rc_bcc_et_corr.dat') Not need?
-    corrDF = pd.read_csv('rc_bcc_et_corr_targetFix.dat') 
+    # correction factors
+    corrDF = pd.read_csv('rc_bcc_et_corr_targetFix.dat')
 
-    # W yield corrected for Lumin.
+    # normalize and apply corrections
     yieldNorm = []
 
     for iQ2 in range(nQ2bins):
-
         yieldNorm.append([])
         outXSEC.append([])
 
         for sec in range(nSec):
-            # Q2 convert binning to match binning in ana12.
-            q = iQ2 + 5
+            q = iQ2 + 5  # keep Valera's ana12 mapping
 
             WcurrentBin = wYield1D[sec][iQ2]
 
-            yieldNorm[-1].append(ROOT.TH1D('nrY' + str(iQ2) + ' ' + str(sec) + addN,
-                                           'nrY' + str(iQ2) + ' ' + str(sec) + addN,
-                                           WcurrentBin.GetNbinsX(),
-                                           WcurrentBin.GetXaxis().GetXmin(),
-                                           WcurrentBin.GetXaxis().GetXmax()))
+            yieldNorm[-1].append(ROOT.TH1D(
+                'nrY' + str(iQ2) + ' ' + str(sec) + addN,
+                'nrY' + str(iQ2) + ' ' + str(sec) + addN,
+                WcurrentBin.GetNbinsX(),
+                WcurrentBin.GetXaxis().GetXmin(),
+                WcurrentBin.GetXaxis().GetXmax()
+            ))
             yieldNorm[-1][-1].SetDirectory(0)
 
-            outXSEC[-1].append(ROOT.TH1D('xsec' + str(iQ2) + ' ' + str(sec) + addN,
-                                         'xsec' + str(iQ2) + ' ' + str(sec) + addN,
-                                         WcurrentBin.GetNbinsX(),
-                                         WcurrentBin.GetXaxis().GetXmin(),
-                                         WcurrentBin.GetXaxis().GetXmax()))
+            outXSEC[-1].append(ROOT.TH1D(
+                'xsec' + str(iQ2) + ' ' + str(sec) + addN,
+                'xsec' + str(iQ2) + ' ' + str(sec) + addN,
+                WcurrentBin.GetNbinsX(),
+                WcurrentBin.GetXaxis().GetXmin(),
+                WcurrentBin.GetXaxis().GetXmax()
+            ))
             outXSEC[-1][-1].SetDirectory(0)
 
             normalize(WcurrentBin, yieldNorm[-1][-1], q, chargeFC_tmp)
+            ApplyCorr(yieldNorm[-1][-1], outXSEC[-1][-1], q, corrDF)
 
-            ApplyCorr(yieldNorm[-1][-1], outXSEC[-1][-1], q, corrDF)    
-
-
-
+    # save output root file
     out_file = ROOT.TFile(addN + "_unfolded_output.root", "RECREATE")
 
-    # Save unfolded 1D hists
-    out_file.mkdir("Unfold1D")
-    out_file.cd("Unfold1D")
+    # save flattened unfolded histograms
+    out_file.mkdir("UnfoldLIN1D")
+    out_file.cd("UnfoldLIN1D")
     for sec in range(nSec):
-        out_file.mkdir(f"Unfold1D/sec{sec}")
-        out_file.cd(f"Unfold1D/sec{sec}")
-        for iQ2 in range(nQ2bins):
-            h1 = tmp_hUnfold[sec][iQ2]
-            h1.SetName(f"hUnfold1D_sec{sec}_Q2bin{iQ2}")
-            h1.Write()
+        h1 = tmp_hUnfold_lin[sec]
+        h1.SetName(f"hUnfoldLIN1D_sec{sec}")
+        h1.Write()
 
-    # Save 1D W-yield hists
+    # save unflattened W-yield histograms
     out_file.mkdir("WYield1D")
     out_file.cd("WYield1D")
     for sec in range(nSec):
@@ -299,54 +348,79 @@ def GetXSEC_roo1D(fileSim, fileData, outXSEC, addN, chargeFC_tmp, regParam, meth
     out_file.Close()
     print(f"Saved output ROOT file: {addN}_unfolded_output.root")
 
-def IntOverSec(listIn, listOut, endN, isTenBin = False):
+def IntOverSec(listIn, listOut, endN, isTenBin=False):
     nQ2bins = 11
-    if (isTenBin):
+    if isTenBin:
         nQ2bins = 10
     for iQ2 in range(nQ2bins):
         listOut.append(ROOT.TH1D('intCutFunc' + str(iQ2) + endN,
-                                     'intCutFunc' + str(iQ2) + endN,
-                                     listIn[0][0].GetNbinsX(),
-                                     listIn[0][0].GetXaxis().GetXmin(),
-                                     listIn[0][0].GetXaxis().GetXmax()))
+                                 'intCutFunc' + str(iQ2) + endN,
+                                 listIn[0][0].GetNbinsX(),
+                                 listIn[0][0].GetXaxis().GetXmin(),
+                                 listIn[0][0].GetXaxis().GetXmax()))
+        listOut[-1].SetDirectory(0)
 
-        for iXbin in range(1, 1 + listIn[0][0].GetNbinsX(),1):
+        for iXbin in range(1, 1 + listIn[0][0].GetNbinsX(), 1):
             value = 0
             for sec in range(6):
                 value += listIn[iQ2][sec].GetBinContent(iXbin)
-            listOut[-1].SetBinContent(iXbin, value/6)
+            listOut[-1].SetBinContent(iXbin, value / 6)
 
 def GetTitle(npad):
-    nQ2 = 50;
-    q2Min = 1;
-    q2Max = 2500;
-    deltaQ2 = np.log(q2Max/q2Min)/nQ2;
-    Q2bin_min = q2Min*math.exp((npad + 5)*deltaQ2)
-    Q2bin_max = q2Min*math.exp((npad + 6)*deltaQ2)
-    return  "             " + str(Q2bin_min)[0:4] + " < Q^{2} < " +  str(Q2bin_max)[0:4] + " GeV^{2}"
-print("end cell 2")
-#----------------------------------------End Cell 2 --------------------------------------------------------
+    nQ2 = 50
+    q2Min = 1
+    q2Max = 2500
+    deltaQ2 = np.log(q2Max/q2Min) / nQ2
+    Q2bin_min = q2Min * math.exp((npad + 5) * deltaQ2)
+    Q2bin_max = q2Min * math.exp((npad + 6) * deltaQ2)
+    return "             " + str(Q2bin_min)[0:4] + " < Q^{2} < " + str(Q2bin_max)[0:4] + " GeV^{2}"
 
+print("end cell 2")
+#----------------------------------------End Cell 2 -------------------------------------------------------
 #----------------------------------------Cell 3 -----------------------------------------------------------
 epochs = [1,2,3]
 
-xsec_allS_roo1D_bayes_1 = []
-xsec_allS_roo1D_bayes_2 = []
-xsec_allS_roo1D_bayes_3 = []
+xsec_allS_rooLIN1D_bayes_1 = []
+xsec_allS_rooLIN1D_bayes_2 = []
+xsec_allS_rooLIN1D_bayes_3 = []
 
-GetXSEC_roo1D(fSim, fData, xsec_allS_roo1D_bayes_2, 'bayes2_1D_2', fccConst, epochs[1], method = 'bayes')
+GetXSEC_rooLIN1D(
+    fSim,
+    fData,
+    xsec_allS_rooLIN1D_bayes_2,
+    'bayes2_LIN1D_2',
+    fccConst,
+    epochs[2],  # Changed to test
+    method='bayes'
+)
 
-xsec_integrated_1D_bayes_1 = []
-xsec_integrated_1D_bayes_2 = []
-xsec_integrated_1D_bayes_3 = []
+xsec_integrated_LIN1D_bayes_1 = []
+xsec_integrated_LIN1D_bayes_2 = []
+xsec_integrated_LIN1D_bayes_3 = []
 
-IntOverSec(xsec_allS_roo1D_bayes_2, xsec_integrated_1D_bayes_2, 'xsec_integrated_1D_bayes_2')
+IntOverSec(
+    xsec_allS_rooLIN1D_bayes_2,
+    xsec_integrated_LIN1D_bayes_2,
+    'xsec_integrated_LIN1D_bayes_2'
+)
 
 """
-xsec_allS_roo1D_bayes_2_lastQ2 = []
-GetXSEC_roo1D(fSim_lastQ2, fData_lastQ2, xsec_allS_roo1D_bayes_2_lastQ2, 'bayes2_1D_2_lastQ2', fccConst, epochs[1], method = 'bayes')
-xsec_integrated_1D_bayes_2_lastQ2 = []
-IntOverSec(xsec_allS_roo1D_bayes_2_lastQ2, xsec_integrated_1D_bayes_2_lastQ2, 'xsec_integrated_1D_bayes_2_lastQ2')
+xsec_allS_rooLIN1D_bayes_2_lastQ2 = []
+GetXSEC_rooLIN1D(
+    fSim_lastQ2,
+    fData_lastQ2,
+    xsec_allS_rooLIN1D_bayes_2_lastQ2,
+    'bayes2_LIN1D_2_lastQ2',
+    fccConst,
+    epochs[1],
+    method='bayes'
+)
+xsec_integrated_LIN1D_bayes_2_lastQ2 = []
+IntOverSec(
+    xsec_allS_rooLIN1D_bayes_2_lastQ2,
+    xsec_integrated_LIN1D_bayes_2_lastQ2,
+    'xsec_integrated_LIN1D_bayes_2_lastQ2'
+)
 """
 
 print("end cell 3")
@@ -430,8 +504,8 @@ def AddSysUNC(histIN_L, df):
                 histIN.SetBinError(iXbin, 0.)
 
 
-AddSysUNC(xsec_integrated_1D_bayes_2, statDF)
-#AddSysUNC(xsec_integrated_1D_bayes_2_lastQ2, statDF)
+AddSysUNC(xsec_integrated_LIN1D_bayes_2, statDF)
+
 
 print("end cell 4")
 #----------------------------------------End Cell 4 -------------------------------------------------------
@@ -508,7 +582,7 @@ if sysDF is None:
 else:
     print(f'Loaded systematics from: {sys_path}')
 
-GetSysHists(xsec_integrated_1D_bayes_2, sysUncHistL, sysDF, 'sys_Name')
+GetSysHists(xsec_integrated_LIN1D_bayes_2, sysUncHistL, sysDF, 'sys_Name')
 #GetSysHists(xsec_integrated_1D_bayes_2_lastQ2, sysUncHistL_lastQ2, sysDF, 'sys_Name_lastQ2')
 
 print("end cell 5")
@@ -522,7 +596,7 @@ import math
 import numpy as np
 import pandas as pd
 import ROOT
-from ROOT import TCanvas, TLegend, TGraph
+from ROOT import TCanvas, TLegend, TGraph, TGraphErrors
 
 ROOT.gStyle.SetOptStat(0)
 
@@ -540,12 +614,29 @@ def _load_exp_graph(dat_file, xmin=1.15, xmax=2.5):
     x = df["W"].to_numpy(dtype=float)
     y = df["sigma"].to_numpy(dtype=float) * 1e-3
 
-    gr = TGraph(len(x), x, y)
+    # total error = sqrt(error^2 + sys_error^2) * 1e-3
+    ey = np.sqrt(
+        df["error"].to_numpy(dtype=float)**2 +
+        df["sys_error"].to_numpy(dtype=float)**2
+    ) * 1e-3
+
+    ex = np.zeros_like(x, dtype=float)
+    
+    #to get rid of error bars
+    ey = np.zeros_like(x, dtype=float)
+
+    gr = TGraphErrors(
+        len(x),
+        np.array(x, dtype='float64'),
+        np.array(y, dtype='float64'),
+        np.array(ex, dtype='float64'),
+        np.array(ey, dtype='float64')
+    )
     gr.SetMarkerStyle(20)              # red circles
     gr.SetMarkerSize(0.7)
     gr.SetMarkerColor(ROOT.kRed + 1)
     gr.SetLineColor(ROOT.kRed + 1)
-    gr.SetLineWidth(2)
+    gr.SetLineWidth(1)
     return gr, df
 
 def _q2_center_from_iQ2(iQ2):
@@ -622,7 +713,12 @@ def PlotIntegratedXsecVsW_withExp(hist_list, exp_dir, out_dir='xsec_vs_W_overlay
                     y_vals.append(y)
 
         if len(df_exp) > 0:
-            y_vals.extend(df_exp["sigma"].to_numpy(dtype=float) * 1e-3)
+            y_exp = df_exp["sigma"].to_numpy(dtype=float) * 1e-3
+            ey_exp = np.sqrt(
+                df_exp["error"].to_numpy(dtype=float)**2 +
+                df_exp["sys_error"].to_numpy(dtype=float)**2
+            ) * 1e-3
+            y_vals.extend(y_exp + ey_exp)
 
         ymax = max(y_vals) if y_vals else 1.0
 
@@ -647,7 +743,7 @@ def PlotIntegratedXsecVsW_withExp(hist_list, exp_dir, out_dir='xsec_vs_W_overlay
         leg.SetBorderSize(0)
         leg.SetFillStyle(0)
         leg.SetTextSize(0.05) 
-        leg.AddEntry(gr_me, "My 1D unfolded", "p")
+        leg.AddEntry(gr_me, "My 1D unfolded w/ linearized binning", "p")
         leg.AddEntry(gr_exp, "Valerii published (2D unfolded)", "p")
         leg.Draw()
 
@@ -661,13 +757,12 @@ def PlotIntegratedXsecVsW_withExp(hist_list, exp_dir, out_dir='xsec_vs_W_overlay
 exp_data_dir = "../../HarryLeeDCC/paper_plots/exp_data"
 
 PlotIntegratedXsecVsW_withExp(
-    xsec_integrated_1D_bayes_2,
+    xsec_integrated_LIN1D_bayes_2,
     exp_dir=exp_data_dir,
-    out_dir='xsec_vs_W_overlay_png',
+    out_dir='xsec_vs_W_overlay_LIN1D_png_with_lol',
     xmin=1.1,
     xmax=2.6
 )
-
 print("end cell 6")
 #----------------------------------------End Cell 6 -------------------------------------------------------
 
