@@ -237,6 +237,8 @@ def GetXSEC_rooLIN1D(fileSim, fileData, outXSEC, addN, chargeFC_tmp, regParam, m
     Output contract stays the same:
       outXSEC[iQ2][sec]
     """
+    use_corr = True
+    
     if method not in ['bayes', 'bbb', 'svd']:
         print('unsupported deconvolution method is used, please put bayes or bbb or svd')
         return
@@ -321,7 +323,13 @@ def GetXSEC_rooLIN1D(fileSim, fileData, outXSEC, addN, chargeFC_tmp, regParam, m
             outXSEC[-1][-1].SetDirectory(0)
 
             normalize(WcurrentBin, yieldNorm[-1][-1], q, chargeFC_tmp)
-            ApplyCorr(yieldNorm[-1][-1], outXSEC[-1][-1], q, corrDF)
+
+            if use_corr:
+                ApplyCorr(yieldNorm[-1][-1], outXSEC[-1][-1], q, corrDF)
+            else:
+                for iBin in range(1, WcurrentBin.GetNbinsX() + 1):
+                    outXSEC[-1][-1].SetBinContent(iBin, yieldNorm[-1][-1].GetBinContent(iBin))
+                    outXSEC[-1][-1].SetBinError(iBin, yieldNorm[-1][-1].GetBinError(iBin))
 
     # save output root file
     out_file = ROOT.TFile(addN + "_unfolded_output.root", "RECREATE")
@@ -377,6 +385,70 @@ def GetTitle(npad):
 
 print("end cell 2")
 #----------------------------------------End Cell 2 -------------------------------------------------------
+#----------------------------------------Cell 2a -------------------------------------------------------
+# Inspect linearized response matrices already stored in fSim
+
+import os
+ROOT.gStyle.SetOptStat(0)
+
+def plot_linearized_response_matrix(fileSim, sec=0, out_dir="response_matrix_lin_png", logz=True):
+    """
+    Plot the raw linearized response matrix for one sector.
+
+    sec is 0..5
+    """
+    os.makedirs(out_dir, exist_ok=True)
+
+    h_resp = _must_get_any(fileSim, [
+        f"UnfoldingS{sec+1}/response",
+        f"UnfoldingS{sec+1}/response;1",
+    ])
+    h_resp = _clone_detached(h_resp, f"lin_response_plot_sec{sec}")
+
+    c = ROOT.TCanvas(f"c_resp_sec{sec}", f"c_resp_sec{sec}", 900, 800)
+    c.SetLeftMargin(0.12)
+    c.SetRightMargin(0.14)
+    c.SetBottomMargin(0.12)
+    if logz:
+        c.SetLogz()
+
+    h_resp.SetTitle(f"Linearized response matrix, sector {sec}")
+    h_resp.GetXaxis().SetTitle("generated global bin")
+    h_resp.GetYaxis().SetTitle("reconstructed global bin")
+    h_resp.GetXaxis().CenterTitle()
+    h_resp.GetYaxis().CenterTitle()
+    h_resp.Draw("COLZ")
+    n_entries = h_resp.GetEntries()
+
+    
+    latex = ROOT.TLatex()
+    latex.SetNDC()
+    latex.SetTextSize(0.03)
+    latex.SetTextAlign(13)
+    
+    latex.DrawLatex(0.14, 0.92, f"Entries = {n_entries:.0f}")
+  
+
+    out_png = os.path.join(out_dir, f"response_matrix_lin_sec{sec}.png")
+    c.SaveAs(out_png)
+    print(f"Saved: {out_png}")
+
+    return h_resp
+
+def plot_all_linearized_response_matrices(fileSim, out_dir="response_matrix_lin_png", logz=True):
+    hists = []
+    for sec in range(6):
+        hists.append(plot_linearized_response_matrix(fileSim, sec=sec, out_dir=out_dir, logz=logz))
+    return hists
+
+# Example: just sector 0
+#h_resp_sec0 = plot_linearized_response_matrix(fSim, sec=0, out_dir="response_matrix_lin_png", logz=True)
+
+# If you want all 6 sectors instead, use:
+all_resp = plot_all_linearized_response_matrices(fSim, out_dir="response_matrix_lin_png", logz=True)
+
+print("end cell 2a")
+#----------------------------------------End Cell 2a -------------------------------------------------------
 #----------------------------------------Cell 3 -----------------------------------------------------------
 epochs = [1,2,3]
 
@@ -743,7 +815,7 @@ def PlotIntegratedXsecVsW_withExp(hist_list, exp_dir, out_dir='xsec_vs_W_overlay
         leg.SetBorderSize(0)
         leg.SetFillStyle(0)
         leg.SetTextSize(0.05) 
-        leg.AddEntry(gr_me, "My 1D unfolded w/ linearized binning", "p")
+        leg.AddEntry(gr_me, "My 1D unfolded w/ lin.bin WITH CORR", "p")
         leg.AddEntry(gr_exp, "Valerii published (2D unfolded)", "p")
         leg.Draw()
 
@@ -759,11 +831,170 @@ exp_data_dir = "../../HarryLeeDCC/paper_plots/exp_data"
 PlotIntegratedXsecVsW_withExp(
     xsec_integrated_LIN1D_bayes_2,
     exp_dir=exp_data_dir,
-    out_dir='xsec_vs_W_overlay_LIN1D_png_with_lol',
+    out_dir='xsec_vs_W_overlay_LIN1D_png_WITH_CORRECTIONS',
     xmin=1.1,
     xmax=2.6
 )
 print("end cell 6")
 #----------------------------------------End Cell 6 -------------------------------------------------------
+#----------------------------------------Cell 7 -----------------------------------------------------------
+import os
+import re
+import glob
+import math
+import numpy as np
+import pandas as pd
+import ROOT
+from ROOT import TCanvas, TLegend, TGraph
 
+ROOT.gStyle.SetOptStat(0)
 
+def _extract_q2_from_filename(path):
+    m = re.search(r'Q2=([0-9.]+)\.dat$', os.path.basename(path))
+    if not m:
+        raise ValueError(f"Cannot extract Q2 from filename: {path}")
+    return float(m.group(1))
+
+def _load_exp_df(dat_file, xmin=1.15, xmax=2.5):
+    # expected columns: W eps sigma error sys_error
+    df = pd.read_csv(dat_file, sep=r"\s+", comment="#")
+    df = df[(df["W"] >= xmin) & (df["W"] <= xmax)].copy()
+    df["sigma_plot"] = df["sigma"].astype(float) * 1e-3
+    return df
+
+def _q2_center_from_iQ2(iQ2):
+    q = iQ2 + 5
+    nQ2 = 50
+    q2Min = 1.0
+    q2Max = 2500.0
+    deltaQ2 = np.log(q2Max / q2Min) / nQ2
+    return 0.5 * (
+        q2Min * math.exp(q * deltaQ2) +
+        q2Min * math.exp((q + 1) * deltaQ2)
+    )
+
+def _hist_value_at_x(hist, x):
+    ibin = hist.GetXaxis().FindBin(x)
+    if ibin < 1 or ibin > hist.GetNbinsX():
+        return None
+    return hist.GetBinContent(ibin)
+
+def _ratio_graph_from_hist_and_exp(hist, df_exp, min_my_y=1e-30):
+    x_vals = []
+    r_vals = []
+
+    for _, row in df_exp.iterrows():
+        x = float(row["W"])
+        y_exp = float(row["sigma_plot"])
+        y_me = _hist_value_at_x(hist, x)
+
+        if y_me is None:
+            continue
+        if y_me <= min_my_y:
+            continue
+
+        ratio = y_exp / y_me
+        x_vals.append(x)
+        r_vals.append(ratio)
+
+    gr = TGraph(
+        len(x_vals),
+        np.array(x_vals, dtype="float64"),
+        np.array(r_vals, dtype="float64")
+    )
+    gr.SetMarkerStyle(20)
+    gr.SetMarkerSize(1.0)
+    gr.SetMarkerColor(ROOT.kBlack)
+    gr.SetLineColor(ROOT.kBlack)
+    gr.SetLineWidth(2)
+    return gr, np.array(r_vals, dtype=float)
+
+def PlotRatio_ValeriiOverMine(hist_list, exp_dir,
+                              out_dir="ratio_valerii_over_mine_png",
+                              xmin=1.15, xmax=2.5,
+                              last_q2_xmax=2.25):
+    os.makedirs(out_dir, exist_ok=True)
+
+    exp_files = sorted(glob.glob(os.path.join(exp_dir, "*.dat")))
+    if not exp_files:
+        raise RuntimeError(f"No .dat files found in: {exp_dir}")
+
+    exp_map = {}
+    for f in exp_files:
+        q2 = _extract_q2_from_filename(f)
+        exp_map[q2] = f
+    exp_q2_vals = sorted(exp_map.keys())
+
+    # only Q2 bins 1..9
+    for iQ2 in range(1, 10):
+        h_in = hist_list[iQ2]
+        if not h_in:
+            print(f"Skip Q2 bin {iQ2}: histogram is missing")
+            continue
+
+        q2_center = _q2_center_from_iQ2(iQ2)
+        q2_match = min(exp_q2_vals, key=lambda q: abs(q - q2_center))
+        exp_file = exp_map[q2_match]
+
+        xmax_use = last_q2_xmax if iQ2 == 9 else xmax
+
+        df_exp = _load_exp_df(exp_file, xmin=xmin, xmax=xmax_use)
+        gr_ratio, ratios = _ratio_graph_from_hist_and_exp(h_in, df_exp)
+
+        if len(ratios) == 0:
+            print(f"Skip Q2 bin {iQ2}: no valid ratio points")
+            continue
+
+        ymin = min(0.9, 0.95 * np.min(ratios))
+        ymax = max(1.1, 1.05 * np.max(ratios))
+
+        c = TCanvas(f"c_ratio_Q2_{iQ2}", f"c_ratio_Q2_{iQ2}", 900, 700)
+        c.SetMargin(0.12, 0.05, 0.12, 0.08)
+        c.SetGrid()
+
+        frame = ROOT.TH1D(f"frame_ratio_Q2_{iQ2}", "", 100, xmin, xmax_use)
+        frame.SetMinimum(ymin)
+        frame.SetMaximum(ymax)
+        frame.SetTitle(GetTitle(iQ2))
+        frame.GetXaxis().SetTitle("W (GeV)")
+        frame.GetYaxis().SetTitle("Valerii / Mine")
+        frame.GetXaxis().CenterTitle()
+        frame.GetYaxis().CenterTitle()
+        frame.Draw()
+
+        # horizontal line at 1
+        line = ROOT.TLine(xmin, 1.0, xmax_use, 1.0)
+        line.SetLineStyle(2)
+        line.SetLineWidth(2)
+        line.Draw("SAME")
+
+        gr_ratio.Draw("P SAME")
+
+        leg = TLegend(0.14, 0.78, 0.44, 0.88)
+        leg.SetBorderSize(0)
+        leg.SetFillStyle(0)
+        leg.AddEntry(gr_ratio, "Valerii / Mine", "p")
+        leg.Draw()
+
+        out_name = os.path.join(out_dir, f"ratio_Q2bin_{iQ2}.png")
+        c.SaveAs(out_name)
+
+        print(f"Q2 bin {iQ2}: matched exp file Q2 = {q2_match:.4f}")
+        print(f"Saved: {out_name}")
+
+# Choose which result you want to compare:
+# xsec_integrated_1D_bayes_2
+# xsec_integrated_LIN1D_bayes_2
+exp_data_dir = "../../HarryLeeDCC/paper_plots/exp_data"
+
+PlotRatio_ValeriiOverMine(
+    xsec_integrated_LIN1D_bayes_2,
+    exp_dir=exp_data_dir,
+    out_dir="ratio_valerii_over_mine_LIN1D_png",
+    xmin=1.15,
+    xmax=2.5,
+    last_q2_xmax=2.25
+)
+
+print("end cell 7")
+#----------------------------------------End Cell 7 -------------------------------------------------------
